@@ -20,13 +20,27 @@
           </div>
 <br>
 <br>
-          <div class="container">
-            <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
-            <div class="imageoverlay">Sports</div>
-          </div>
+<div class="row">
+  <div class="column">
+    <div class="container">
+      <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
+      <div class="imageoverlay">Sports</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container2">
+      <img src="https://i.pinimg.com/236x/ef/37/90/ef3790da70b200b06e9058014f7cf7e8--music-illustration-vector-free.jpg" alt="music" class="image">
+      <div class="imageoverlay">Music</div>
+    </div>
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+          
+          
 
-
-
+          
 
 
 
@@ -168,6 +182,17 @@ a {
   color: white;
       }
 
+      .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .container {
   position: relative;
   padding-top: 20px;
