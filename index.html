@@ -52,7 +52,7 @@
 </div>
     <br>
     <div class="col-container">
-      <div class="col" >
+      <div class="col">
         <h2>Sports</h2>
         <p>Hello World</p>
       </div>
@@ -133,16 +133,19 @@ cursor:pointer;
 color: darkslategrey;}
 
 .col-container {
-  display: table;
-  width: 100%;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
 }
+
 .col {
-  display: table-cell;
-  padding-left: 50px;
-  padding-right:30px;
-  padding-top:50px;
-  column-gap: 35px;
-  width:400px;
+  text-align: center;
+  margin-bottom: 2px;
+  display: block;
+  color: #2c3e50;
 }
 
 .overlay {
