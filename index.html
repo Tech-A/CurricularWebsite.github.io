@@ -143,9 +143,6 @@ a {
 }
 
 /* bg image */
-* {
-  box-sizing: border-box;
-}
 
 .bg-image-container {
   position: relative;
@@ -165,7 +162,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position:absolute;
+  position:relative;
 }
 
 .img1 { background-image: linear-gradient(rgba(85, 73, 73, 0.5), rgba(90, 77, 77, 0.5)), url("https://www.thecollegesolution.com/wp-content/uploads/2018/08/shutterstock_2412716621-1024x418-1024x360.jpg"); }
@@ -182,9 +179,11 @@ a {
   font-size: 80px;
   border: 10px solid #f1f1f1;
   background-position: center;
-  position: relative;
-  top: 450px;
-  left: 650px;
+  position: absolute;
+  top: 100px;
+  right: 600px;
+  display: block;
+margin: auto;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 550px;
