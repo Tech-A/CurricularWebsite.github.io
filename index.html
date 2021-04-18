@@ -15,16 +15,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <section id="slide-1">
       <div class="cover-1"></div>
-      <div class="cover-text">Title 1</div>
     </section>
     <section id="slide-2">
       <div class="cover-2"></div>
-      <div class="cover-text">Title 2</div>
     </section>
     <section id="slide-3">
       <div class="cover-3"></div>
-      <div class="cover-text">Title 3</div>
-    </section>
+      </section>
+    <div class="cover-text">
+      <h1> Marist College Extracurriculars</h1> 
+      <p class= "cover-subtext" style= "font-size: 35px;">Find your <i>identity</i> through extracurriculars!</p>
+      <button><a href="Explorepage.html" class="Explorepage">Explore now</a>
+      </button>
+      </div>
 <br>
 <br>
 <br>
@@ -269,34 +272,68 @@ color: darkslategrey;}
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-      height: 100vh;
+      height: 50%;
     }
     
     .cover-1 {
-      background-image: url('http://placekitten.com/800/350');
-      z-index: 3000;
+      background-image: url('https://www.thecollegesolution.com/wp-content/uploads/2018/08/shutterstock_2412716621-1024x418-1024x360.jpg');
+      z-index: 300;
     }
     
     .cover-2 {
-      background-image: url('http://placekitten.com/g/800/350');
+      background-image: url('https://www.careeraddict.com/uploads/article/58364/illustration-college-campus-students.jpg');
     }
     
     .cover-3 {
-      background-image: url('http://placekitten.com/800/355');
+      background-image: url('https://static1.shine.com/l/m/images/blog/extra_curricular_activities_in_resume_banner.png');
     }
     
     .cover-text {
-      font-size: 25px;
-      color: #FFFFFF;
-      text-shadow: 0 0 30px #000000;
-      position: absolute;
-      left: 20%;
-      top: 50%;
+      background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0, 0.4); 
+color: white;
+font-weight: bold;
+font-size: 60px;
+border: 10px solid #f1f1f1;
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: 2;
+width: 550px;
+padding: 20px;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
       -webkit-transform: translate(-50%);
       -moz-transform: translate(-50%);
       -ms-transform: translate(-50%);
       transform: translate(-50%);
     }
+.cover-subtext {
+text-align: center;
+letter-spacing: 3px;
+font-size: 30px;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+}
+.cover-text button {
+border: none;
+outline: 0;
+width: 200px;
+height: 80px;
+display: inline-block;
+padding: 10px 25px;
+color: black;
+background-color: #ddd;
+text-align: center;
+font-size: 25px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+cursor: pointer;
+}
+.cover-text button:hover {
+background-color: #555;
+color: white;
+} 
+
       </style>
 
 
