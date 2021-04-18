@@ -25,7 +25,20 @@
             <button><a href="Explorepage.html"  class="Explorepage">Explore now</a></button>
           </div>
     </div>
-
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <section id="slide-1">
+      <div class="cover-1"></div>
+      <div class="cover-text">Title 1</div>
+    </section>
+    <section id="slide-2">
+      <div class="cover-2"></div>
+      <div class="cover-text">Title 2</div>
+    </section>
+    <section id="slide-3">
+      <div class="cover-3"></div>
+      <div class="cover-text">Title 3</div>
+    </section>
 <br>
 <br>
 <br>
@@ -328,7 +341,49 @@ color: darkslategrey;}
 
 .container:hover .imageoverlay {
   opacity: 1;
-}
+}  
+
+    #slide-1,
+    #slide-2,
+    #slide-3 {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cover-1,
+    .cover-2,
+    .cover-3 {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 100vh;
+    }
+    
+    .cover-1 {
+      background-image: url('http://placekitten.com/800/350');
+      z-index: 3000;
+    }
+    
+    .cover-2 {
+      background-image: url('http://placekitten.com/g/800/350');
+    }
+    
+    .cover-3 {
+      background-image: url('http://placekitten.com/800/355');
+    }
+    
+    .cover-text {
+      font-size: 25px;
+      color: #FFFFFF;
+      text-shadow: 0 0 30px #000000;
+      position: absolute;
+      left: 20%;
+      top: 50%;
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+      transform: translate(-50%);
+    }
       </style>
 
 
