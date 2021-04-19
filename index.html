@@ -53,15 +53,28 @@
 <hr>
 <br>
 <br>
+
 <div class= "wrapper">
   <div class="images">
     <div class="img-1"></div>
     <div class="img-2"></div>
   </div>
   <div class="slider">
+    <div class="drag-line">
+      <span></span>
+    </div>
     <input type= "range" min="0" max="100" value="50">
   </div>
 </div>
+
+<script>
+  const slider = document.querySelector(".slider input");
+  const dragLine = document.querySelector(".slider .drag-line");
+  slider.oninput = ()=>{
+    let sliderVal = slider.value;
+    dragLine.style.left = sliderVal + "%"
+  }
+</script>
 
 <div class="row">
   <div class="column">
@@ -319,10 +332,64 @@ box-sizing:border-box;
 .slider input::-webkit-slider-thumb{
   height:486px;
   width: 3px;
-  background: #fff;
+  background: none;
   -webkit-appearance: none;
 }
 
+.slider .drag-line {
+  width: 3px;
+  height: 486px;
+  position: absolute;
+  left: 49.85%;
+}
+
+.slider .drag-line::before,
+.slider .drag-line::after{
+  position:absolute;
+  content:"";
+  width:100%;
+  height:222px;
+  background: #fff;
+}
+.slider .drag-line::before{
+  top:0;
+}
+
+.slider .drag-line::after{
+  bottom:0;
+  }
+
+.slider .drag-line span {
+  height: 42px;
+  width: 42px;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .slider .drag-line span::before,
+  .slider .drag-line span::after {
+  position:absolute;
+  content:"";
+  top: 50%;
+  border: 10px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .slider .drag-line span::before{
+    left:40%;
+    border-left-color:red;
+  }
+
+  .slider .drag-line span::before {
+    left: 60%;
+    border-left-color:red;
+  }
 /* Columns with images and text */
 .column {
   float: left;
