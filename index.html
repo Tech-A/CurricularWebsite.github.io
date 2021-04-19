@@ -50,6 +50,18 @@
   <a href="http://www.maristcollege.school.nz/Webspace/1/"><b>Marist College</b></a> offers a range of extracurriculars varying from sports to performing arts to music.</p>
 <br>
 <br>
+
+<div class= "wrapper">
+  <div class="images">
+    <div class="img-1"></div>
+    <div class="img-2"></div>
+  </div>
+  <div class="slider">
+    <input type= "range" min="0" max="100" value="50">
+  </div>
+</div>
+
+
 <hr>
 
 <div class="row">
@@ -264,7 +276,52 @@ a {
 } 
 
 /* Image comparison slider */
+* {margin: 0;
+padding:0;
+box-sizing:border-box;
+}
 
+.wrapper {
+  position:relative;
+  height: 500px;
+  width: 750px;
+  background: #fff;
+  border: 7px solid #fff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+  }
+
+.wrapper .images {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.wrapper .images .img-1{
+  height: 100%;
+  width: 100%;
+  background: url("https://static.vecteezy.com/system/resources/previews/001/419/146/non_2x/stressed-student-boy-with-books-vector.jpg") no-repeat;
+}
+
+.wrapper .slider{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.wrapper .slider input{
+  width:100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+
+.slider input::-webkit-slider-thumb{
+  height:486px;
+  width: 3px;
+  background: #fff;
+  -webkit-appearance: none;
+}
 
 /* Columns with images and text */
 .column {
