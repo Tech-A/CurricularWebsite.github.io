@@ -135,14 +135,7 @@
   <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image">
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>   
-<p>Add a footer?
-</p>
+
    </body>
 
       <style>
@@ -440,7 +433,11 @@ box-sizing:border-box;
 .flex-container {
     display: flex;
 }
-
+.flex-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .flex-child {
     flex: 1;
 }  
