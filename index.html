@@ -111,45 +111,23 @@
 <br>
 <br>
 
-<div class="flex-container">
+  <div class="flex-container">
 
-  <div class="flex-child" >
-    <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
-      <div class="imageoverlay">
-        <div class="text">
-        <a href="Sportspage.html"  class="Sportspage"  style="color:white;"><h2>Sports</h2></a>
-        <p>Physical activity helps stimulate the brain and lead to a healthy body.</p>
-    </div>
-  </div>
+    <div class="flex-child 1">
+      <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
 </div>
 
-<div class="flex-child">
+<div class="flex-child 2">
   <img src="https://i.pinimg.com/236x/ef/37/90/ef3790da70b200b06e9058014f7cf7e8--music-illustration-vector-free.jpg" alt="music" class="image">
-      <div class="imageoverlay">
-        <div class="text">
-          <a href="Musicpage.html"  class="Musicpage"  style="color:white;"><h2>Music</h2></a>
-        </div>
-    </div>
- </div>
+</div>
 
-<div class="flex-child">
-  <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image" >
-  <div class="imageoverlay">
-    <div class="text">
-  <a href="Artspage.html" class="Artspage" style="color:white;"><h2>The arts</h2></a>
-   </div>
-  </div>
+<div class="flex-child 3">
+  <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image">
 </div>
-  
-<div class="flex-child" >
-  <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image" >
-<div class="imageoverlay">
-  <div class="text">
-<a href="Socialjusticepage.html" class="Socialjusticepage" style="color:white;"><h2>Social Justice</h2></a>
+
+<div class="flex-child 4">
+  <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image">
 </div>
-</div>
-</div>
-   </div>
 
 <br>
 <br>
@@ -448,25 +426,20 @@ box-sizing:border-box;
     left: 60%;
     border-top-color: #fff;
   }
-/* Columns with images and text */
+  
+/* Columns with images and text flex */
 .flex-container {
-  display: flex;
-  flex-flow: row;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+    display: flex;
 }
+
 .flex-child {
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-left: 20px;
+} 
+
 /* Overlay icons */
  
 
