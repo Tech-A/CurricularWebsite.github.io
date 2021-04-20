@@ -99,19 +99,38 @@
 
     <div class="flex-child">
       <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
-</div>
+      <div class="overlay">
+      <div class="text">
+        <a href="Sportspage.html"  class="Sportspage"  style="color:white;">Sports</a>
+    </div>
+    </div>
+  </div>
 
 <div class="flex-child">
   <img src="https://i.pinimg.com/236x/ef/37/90/ef3790da70b200b06e9058014f7cf7e8--music-illustration-vector-free.jpg" alt="music" class="image">
+  <div class="overlay">
+  <div class="text">
+    <a href="Musicpage.html"  class="Musicpage"  style="color:white;">Music</a>
+  </div>
+</div>
 </div>
 
 <div class="flex-child">
   <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image">
+  <div class="imageoverlay">
+    <div class="text">
+    <a href="Artspage.html"  class="Artspage"  style="color:white;">The arts</a>
+</div>
+</div>
 </div>
 
 <div class="flex-child">
   <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image">
-</div>
+  <div class="imageoverlay"><div class="text">
+    <a href="Socialjusticepage.html"  class="Socialjusticepage"  style="color:white;">Social Justice</a>
+  </div>
+  </div>
+  </div>
 
 <br>
 <br>
@@ -429,7 +448,45 @@ a {
 } 
 
 /* Overlay icons */
- 
+.flex-child {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.flex-child:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 
       </style>
