@@ -69,10 +69,12 @@
 
 <script>
   const slider = document.querySelector(".slider input");
+  const img = document.querySelector(".images .img-2");
   const dragLine = document.querySelector(".slider .drag-line");
   slider.oninput = ()=>{
     let sliderVal = slider.value;
     dragLine.style.left = sliderVal + "%"
+    img.style.width = sliderVal + "%"
   }
 </script>
 
@@ -186,6 +188,7 @@ a {
   font-size: 18px;  
   border: none;
   outline: none;
+
   color: white;
   padding: 14px 16px;
   padding-bottom: 15px;
@@ -299,6 +302,7 @@ box-sizing:border-box;
   position:relative;
   height: 500px;
   width: 750px;
+  overflow: hidden;
   background: #fff;
   border: 7px solid #fff;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
@@ -314,6 +318,12 @@ box-sizing:border-box;
   height: 100%;
   width: 100%;
   background: url("https://static.vecteezy.com/system/resources/previews/001/419/146/non_2x/stressed-student-boy-with-books-vector.jpg") no-repeat;
+}
+.wrapper .images .img-2{
+  position:absolute;
+  height: 100%;
+  width: 50%;
+  background: url("https://kidshelpline.com.au/sites/default/files/thumbnail-T-LAY_0.png") no-repeat;
 }
 
 .wrapper .slider{
@@ -335,6 +345,7 @@ box-sizing:border-box;
   width: 3px;
   background: none;
   -webkit-appearance: none;
+  cursor: col-resize;
 }
 
 .slider .drag-line {
@@ -342,6 +353,7 @@ box-sizing:border-box;
   height: 486px;
   position: absolute;
   left: 49.85%;
+  pointer-events: none;
 }
 
 .slider .drag-line::before,
