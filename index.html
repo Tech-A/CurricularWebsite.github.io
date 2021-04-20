@@ -115,37 +115,44 @@
   <div class="column">
     <div class="container">
       <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
-      <div class="imageoverlay"><a href="Sportspage.html"  class="Sportspage"  style="color:white;">Sports</a></div>
+      <div class="imageoverlay"><a href="Sportspage.html"  class="Sportspage"  style="color:white;">Sports</a>
+        <div class="text">
+      <p>Physical activity helps stimulate the brain and lead to a healthy body.</p>
     </div>
-    <div class= "text">
-    <h2>Sports</h2>
-        <p>Physical activity helps stimulate the brain and lead to a healthy body.</p>
-      </div>
   </div>
+</div>
 
   <div class="column">
     <div class="container">
       <img src="https://i.pinimg.com/236x/ef/37/90/ef3790da70b200b06e9058014f7cf7e8--music-illustration-vector-free.jpg" alt="music" class="image">
-      <div class="imageoverlay"><a href="Musicpage.html"  class="Musicpage"  style="color:white;">Music</a></div>
+      <div class="imageoverlay"><a href="Musicpage.html"  class="Musicpage"  style="color:white;">Music</a>
+        <div class="text">
+          <p>Hello World!</p>
         </div>
-        <div class= "text">
-        <h2>Music</h2>
-      <p>Hello World!</p>
+      </div>
     </div>
-  </div>
+      
 
   <div class="column">
     <div class="container">
       <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image" >
-      <div class="imageoverlay"><a href="Artspage.html"  class="Artspage"  style="color:white;">The arts</a></div>
+      <div class="imageoverlay"><a href="Artspage.html"  class="Artspage"  style="color:white;">The arts</a>
+        <div class="text">
+          <p>Hello World!</p>
+        </div>
       </div>
-      <div class= "text">
-        <h2>The Arts</h2>
-      <p>Some other text..</p>
-      <p>Some other text..</p>
-    </div>
-</div>
+  </div>
 
+
+<div class="column">
+  <div class="container">
+    <img src="" alt="socialjustice" class="image" >
+    <div class="imageoverlay"><a href="Socialjusticepage.html"  class="Socialjusticepage"  style="color:white;">Social Justice</a>
+      <div class="text">
+        <p>Hello World!</p>
+      </div>
+    </div>
+  </div>
 
        
     
@@ -441,26 +448,35 @@ box-sizing:border-box;
     border-top-color: #fff;
   }
 /* Columns with images and text */
+
 .column {
-  float: left;
-  width: 350px;
-  padding: 100px;
+float: left;
+width: 350px;
+padding: 0.5px;
 }
+.row {margin: 0 -5px;}
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
-  padding-right: 0.5px;
-  padding-left: 0.5px;
-
+content: "";
+clear: both;
+display: table;
+padding-right: 0.5px;
+padding-left: 0.5px;
 }
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
 .container {
-  position: relative;
-  padding-top: 5px;
-  width: 50%;
-  max-width: 300px; 
-  column-gap: 100px;
+position: relative;
+padding-top: 5px;
+width: 50%;
+max-width: 300px; 
+column-gap: 100px;
 }
 
 /* Overlay icons */
@@ -472,23 +488,34 @@ box-sizing:border-box;
 }
 
 .imageoverlay {
-  position: absolute; 
-  bottom: 0; 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1; 
-  width: 360px;
   transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
 }
 
 .container:hover .imageoverlay {
   opacity: 1;
-}  
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 
       </style>
