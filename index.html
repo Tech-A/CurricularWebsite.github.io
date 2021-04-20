@@ -111,9 +111,9 @@
 <br>
 <br>
 
-<div class="flex-container">
+<div class="row">
 
-  <div class="flex-child 1">
+  <div class="container" style="margin-left:10px;">
     <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
       <div class="imageoverlay">
         <div class="text">
@@ -123,7 +123,7 @@
   </div>
 </div>
 
-<div class="flex-child 2">
+<div class="container">
   <img src="https://i.pinimg.com/236x/ef/37/90/ef3790da70b200b06e9058014f7cf7e8--music-illustration-vector-free.jpg" alt="music" class="image">
       <div class="imageoverlay">
         <div class="text">
@@ -133,7 +133,7 @@
     </div>
  </div>
 
-<div class="flex-child 3">
+<div class="container">
   <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image" >
   <div class="imageoverlay">
     <div class="text">
@@ -143,7 +143,7 @@
   </div>
 </div>
   
-<div class="flex-child 4">
+<div class="container" style="margin-right:10px;">
   <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image" >
 <div class="imageoverlay">
   <div class="text">
@@ -452,19 +452,17 @@ box-sizing:border-box;
     border-top-color: #fff;
   }
 /* Columns with images and text */
-.flex-container {
+.row {
     display: flex;
     padding: 15px;
     margin: 15px;
 }
 
-.flex-child {
+.container {
     flex: 1;
     margin-right:15px;
 }  
-.flex-child:first-child {
-  margin-left:10px;
-}
+
 
 
 /* Overlay icons */
@@ -489,7 +487,7 @@ box-sizing:border-box;
   transition: .5s ease;
 }
 
-.image:hover .imageoverlay {
+.container:hover .imageoverlay {
   opacity: 1;
 }
 
