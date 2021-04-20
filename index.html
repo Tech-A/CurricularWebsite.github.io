@@ -111,9 +111,9 @@
 <br>
 <br>
 
-<div class="row">
+<div class="flex-container">
 
-  <div class="container" style="margin-left:10px;">
+  <div class="flex-child" >
     <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
       <div class="imageoverlay">
         <div class="text">
@@ -123,7 +123,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="flex-child">
   <img src="https://i.pinimg.com/236x/ef/37/90/ef3790da70b200b06e9058014f7cf7e8--music-illustration-vector-free.jpg" alt="music" class="image">
       <div class="imageoverlay">
         <div class="text">
@@ -132,7 +132,7 @@
     </div>
  </div>
 
-<div class="container">
+<div class="flex-child">
   <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image" >
   <div class="imageoverlay">
     <div class="text">
@@ -141,7 +141,7 @@
   </div>
 </div>
   
-<div class="container" style="margin-right:10px;">
+<div class="flex-child" >
   <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image" >
 <div class="imageoverlay">
   <div class="text">
@@ -449,54 +449,26 @@ box-sizing:border-box;
     border-top-color: #fff;
   }
 /* Columns with images and text */
-.row {
-    display: flex;
-    padding: 15px;
-    margin: 15px;
+.flex-container {
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-
-.container {
-    flex: 1;
-    margin-right:15px;
-}  
-.container img {
-    width: 100%;
-  	height: 100%;
-    padding: 0;
+.flex-child {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
 }
-.imageoverlay {
-    background-color: rgba(0,0,0,0.75);
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s linear;
-    text-shadow: #000 1px 1px 0;
-    color: #ccc;
-  	text-align: center;
-}
-.container:hover > .imageoverlay {
-    display: block;
-    opacity: 1.0;
-}
-.container > text {
-    padding: 20px 40px;
-}
-.container h2 {
-    font-size: 1.2em;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-.container p {
-    margin-bottom: 10px;
-}
-
-
 /* Overlay icons */
-
+ 
 
 
       </style>
