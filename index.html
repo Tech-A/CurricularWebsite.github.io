@@ -113,19 +113,19 @@
 
   <div class="flex-container">
 
-    <div class="flex-child 1">
+    <div class="flex-child">
       <img src="https://cdn2.f-cdn.com/contestentries/419315/20012414/5758a41a4c256_thumb900.jpg" alt="sports" class="image">
 </div>
 
-<div class="flex-child 2">
+<div class="flex-child">
   <img src="https://i.pinimg.com/236x/ef/37/90/ef3790da70b200b06e9058014f7cf7e8--music-illustration-vector-free.jpg" alt="music" class="image">
 </div>
 
-<div class="flex-child 3">
+<div class="flex-child">
   <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image">
 </div>
 
-<div class="flex-child 4">
+<div class="flex-child">
   <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image">
 </div>
 
@@ -426,7 +426,7 @@ box-sizing:border-box;
     left: 60%;
     border-top-color: #fff;
   }
-  
+
 /* Columns with images and text flex */
 .flex-container {
     display: flex;
@@ -435,7 +435,12 @@ box-sizing:border-box;
 .flex-child {
     flex: 1;
 }  
-
+.flex-child img {
+  display: block;
+  width: 325px;
+  height: 300px;
+  opacity: 0.75;
+}
 .flex-child:first-child {
     margin-left: 20px;
 } 
