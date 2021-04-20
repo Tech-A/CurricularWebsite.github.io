@@ -117,7 +117,7 @@
 
 <div class="flex-child">
   <img src="https://www.yorkvca.com/wp-content/uploads/2018/04/performing-arts.jpg" alt="arts" class="image">
-  <div class="overlay">
+  <div class="imageoverlay">
     <div class="text">
     <a href="Artspage.html"  class="Artspage"  style="color:white;">The arts</a>
 </div>
@@ -126,7 +126,7 @@
 
 <div class="flex-child">
   <img src="https://image.freepik.com/free-vector/election-day-young-people-with-ballot-pencil-cardboard-box-voting-concept-vector-illustration_24640-67910.jpg" alt="socialjustice" class="image">
-  <div class="overlay"><div class="text">
+  <div class="imageoverlay"><div class="text">
     <a href="Socialjusticepage.html"  class="Socialjusticepage"  style="color:white;">Social Justice</a>
   </div>
   </div>
@@ -448,6 +448,16 @@ a {
 } 
 
 /* Overlay icons */
+.flex-child {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .overlay {
   position: absolute;
@@ -455,12 +465,11 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 325px;
-  height: 300px;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); 
+  background-color: #008CBA;
 }
 
 .flex-child:hover .overlay {
