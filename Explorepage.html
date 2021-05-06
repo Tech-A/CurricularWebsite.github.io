@@ -10,7 +10,13 @@
         <div class= "navbar">
         <div class="topnav">
           <span onclick="openNav()"> &#9776; Menu </span>
-          
+          <hr>
+          <div class="hero-image">
+            <div class="hero-text">
+              <h1 >Explore extracurriculars at Marist College</h1>
+              <p style= "font-size: 25px;">Keep scrolling to find out which one is for you!</p>
+            </div>
+          </div>
         <div>
           <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,7 +27,8 @@
           <a href="#">Sports</a>
           <a href="#">Music</a>
           </div>
-          </div>
+
+
           <script>
           function openNav() {
           document.getElementById("myNav").style.width = "100%";
@@ -37,7 +44,7 @@
           </body>
 
           <style>
-             /* body */
+  /* body */
 body {
     background-color: rgb(168, 184, 201);
 }
@@ -47,12 +54,13 @@ body, html {
     }
     
     /* navbar */
-            .navbar {
-background-color: rgb(168, 184, 201); 
+.navbar {
+background-color: rgb(198, 216, 235); 
 overflow: hidden;
 height:55px;}
 
-span {float:left;
+span {
+float:left;
 font-size:30px;
 padding-right: 10px;
 padding-bottom: 15px;
@@ -70,14 +78,16 @@ left: 0;
 background-color: rgb(0,0,0);
 background-color: rgba(0,0,0, 0.9);
 overflow-x: hidden;
-transition: 0.5s;}
+transition: 0.5s;
+}
 
 .overlay-content {
 position: relative;
 top: 25%;
 width: 100%;
 text-align: center;
-margin-top: 30px;}
+margin-top: 30px;
+}
 
 .overlay a {
 padding: 8px;
@@ -85,25 +95,31 @@ text-decoration: none;
 font-size: 36px;
 color: #818181;
 display: block;
-transition: 0.3s;}
+transition: 0.3s;
+}
 
 .overlay a:hover, .overlay a:focus {
-color: #f1f1f1;}
+color: #f1f1f1;
+}
 
 .overlay .closebtn {
 position: absolute;
 top: 20px;
 right: 45px;
-font-size: 60px;}
+font-size: 60px;
+}
 
 .overlay a {
-font-size: 20px;}
+font-size: 20px;
+}
 
 .overlay .closebtn {
 font-size: 40px;
 top: 15px;
-right: 35px;}
-          </style>
+right: 35px;
+}
+
+</style>
 
 
 </html>
