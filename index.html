@@ -45,7 +45,6 @@
 <br>
 <br>
 <br>
-
 <hr>
 <br>
 <br>
@@ -72,18 +71,6 @@
     <input type= "range" min="0" max="100" value="50">
   </div>
 </div>
-
-<script>
-  const slider = document.querySelector(".slider input");
-  const img = document.querySelector(".images .img-2");
-  const dragLine = document.querySelector(".slider .drag-line");
-  slider.oninput = ()=>{
-    let sliderVal = slider.value;
-    dragLine.style.left = sliderVal + "%"
-    img.style.width = sliderVal + "%"
-  }
-</script>
-
 <br>
 <br>
 <br>
