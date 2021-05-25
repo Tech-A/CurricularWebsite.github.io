@@ -24,11 +24,26 @@
     font-family: 'Times New Roman', Times, serif;
     }
     p {
+      text-align: justify;
+      margin-left: 50px;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       letter-spacing: 2px;
       
       color: white;
     }
+    aside {
+      width: 500px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-left: 15px;
+      float: left;
+      font-style: italic;
+      text-align: center;
+      background-color:rgb(145, 162, 179);
+    }
+
     
     b {font-style: normal;
     color:darkslategrey;
