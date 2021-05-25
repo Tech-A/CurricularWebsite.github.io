@@ -284,13 +284,14 @@
       }
 
       .text-block {
-        position:relative;
+        position:absolute;
         bottom: 20px;
         right: 20px;
-        background-color: rgb(235, 221, 221);
+        background-color: #06159c;
         color: white;
         padding-left: 20px;
         padding-right: 20px;
+        height: 100px;
       }
     
     /* Columns with images and text flex */
