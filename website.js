@@ -35,4 +35,3 @@ const slider = document.querySelector(".slider input");
             }
 
 
-  

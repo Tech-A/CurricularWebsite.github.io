@@ -282,6 +282,16 @@
         left: 60%;
         border-top-color: #fff;
       }
+      
+      .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     
     /* Columns with images and text flex */
     .flex-container {
