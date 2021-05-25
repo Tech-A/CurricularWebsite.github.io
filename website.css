@@ -176,7 +176,7 @@
     /* Image comparison slider */
     
     .wrapper {
-      position: absolute;
+      float:right;
       margin-top:10px;
       position:relative;
       height: 500px;
