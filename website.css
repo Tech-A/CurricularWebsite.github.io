@@ -31,18 +31,6 @@
       
       color: white;
     }
-    aside {
-      width: 500px;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-top: 40px;
-      margin-right: 20px;
-      margin-left: 15px;
-      float: left;
-      font-style: italic;
-      text-align: center;
-      background-color:rgb(145, 162, 179);
-    }
 
     
     b {font-style: normal;
