@@ -290,11 +290,12 @@
         position:absolute;
         bottom: 20px;
         right: 20px;
-        background-color: #060e57;
+        background-color: #646bac;
         color: white;
         padding-left: 20px;
         padding-right: 20px;
         height: 50px;
+        width: 200px;
       }
     
     /* Columns with images and text flex */
