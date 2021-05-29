@@ -76,7 +76,7 @@
             
             <hr>
             <br>
-
+<h2>Search for extracurriculars by category!</h2>
             <div id="btnContainer">
               <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
               <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
@@ -85,22 +85,59 @@
             
             <div class="row">
               <div class="column" style="background-color:#aaa;">
-                <h2>Column 1</h2>
-                <p>Some text..</p>
+                <h2>Sport</h2>
+                <p>Marist College recognizes the considerable benefits of participation in sports. Students participate in sports for different reasons whether with the intention to win, learn new skills, make friends or just have fun. </p>
+                <ul>
+                <li>Volleyball</li>
+                <li>Badminton</li>
+                <li>Cricket</li>
+                <li>Football</li>
+                <li>Hockey</li>
+                <li>Netball</li>
+                <li>Lacrosse</li>
+                <li>Rugby</li>
+                <li>Squash</li>
+                <li>Water Polo</li>
+                <li>Waka Ama</li>
+                <li>Tennis</li>
+                <li>Futsal</li>
+                <li>Touch Rugby</li>
+              </ul>
               </div>
               <div class="column" style="background-color:#bbb;">
-                <h2>Column 2</h2>
-                <p>Some text..</p>
+                <h2>Music</h2>
+                <p>Marist College offers group and individual (seniors only) music lessons taught by highly trained teachers and professional musicians.Students can also join school musical groups and particpate in school concerts or competitions.</p>
               </div>
+              <h3>Itinerant music</h3>
+              <ul>
+                <li>Flute, Clarinet, Saxophone, Violin, Violoncello, 
+                  Guitar, Voice, Drums </li>
+                  <li>Clarinet</li>
+                  <li>Saxophone</li>
+                  <li>Violin</li>
+                  <li>Violincello</li>
+                  <li>Guitar</li>
+                  <li>Voice</li>
+                  <li>Drums</li>
+              </ul>
+
+              <h3>School groups</h3>
+              <ul>
+                <li>Marybelles</li>
+                  <li>Marist Stella Choir</li>
+                  <li>Marist School orchestra</li>
+                  <li>Marist Jazz band</li>
+              </ul>
+
             </div>
             
             <div class="row">
               <div class="column" style="background-color:#ccc;">
-                <h2>Column 3</h2>
+                <h2>The Arts</h2>
                 <p>Some text..</p>
               </div>
               <div class="column" style="background-color:#ddd;">
-                <h2>Column 4</h2>
+                <h2>Community</h2>
                 <p>Some text..</p>
               </div>
             </div>
@@ -125,6 +162,11 @@ body, html {
   color:white;
   font-size: 75px;
   font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+  color:white;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif
 }
 p {
   text-align: center;
@@ -222,21 +264,20 @@ right: 35px;
   box-sizing: border-box;
 }
 
-/* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
   padding: 10px;
+  background-color: lightskyblue;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+  background-color: wheat;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -250,7 +291,7 @@ right: 35px;
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: rgb(173, 154, 154);
   color: white;
 }
 

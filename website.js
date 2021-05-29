@@ -1,3 +1,4 @@
+//other javascript
 //image slider 
 const slider = document.querySelector(".slider input");
   const img = document.querySelector(".images .img-2");
@@ -34,4 +35,6 @@ const slider = document.querySelector(".slider input");
               });
             }
 
+
+//main javascript project
 
