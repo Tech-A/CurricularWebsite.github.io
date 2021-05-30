@@ -9,6 +9,12 @@ const slider = document.querySelector(".slider input");
     img.style.width = sliderVal + "%"
   }
 
-
+//menu button
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  }
+  function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  }
 //main javascript project
 

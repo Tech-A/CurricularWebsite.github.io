@@ -7,10 +7,117 @@
       </head>
 
       <body>
+        <div class= "navbar">
+          <div class="topnav">
+            <span onclick="openNav()"> &#9776; Menu </span>
+            
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="Explorepage.html">Explore</a>
+            <a href="Artspage.html">Arts</a>
+            <a href="Sportspage.html">Sports</a>
+            <a href="Musicpage.html">Music</a>
+            <a href="Socialjusticepage.html">Service</a>
+            <a href="Quiz.html">Quiz</a>
+            </div>
+  
+            </div>
+          </div>
+          </div>
           </body>
 
           <style>
+body {
+    background-color:#5f5072;
+}
 
+body, html {
+    height: 100%;
+    }
+    
+    h1 {
+  text-align: center;
+  color:white;
+  font-size: 75px;
+  font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+  color:white;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif
+}
+p {
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+}
+   /* navbar */
+   .navbar {
+background-color: #8b788a; 
+overflow: hidden;
+height:45px;}
+
+span {
+float:left;
+font-size:30px;
+padding-right: 10px;
+padding-bottom: 15px;
+cursor:pointer;
+color:white;
+}
+
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition: 0.5s;
+}
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+
+.overlay a {
+font-size: 20px;
+}
+
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
           </style>
 
 
