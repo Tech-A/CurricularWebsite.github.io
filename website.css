@@ -45,10 +45,9 @@
       margin-left: 100px;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       letter-spacing: 2px;
-      
+  
       color: white;
     }
-
     
     b {font-style: normal;
     color:darkslategrey;
@@ -58,6 +57,14 @@
       text-decoration: none;
       color:slategray;
       font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .left {
+      background-color: rgb(255, 255, 255);
+      float: left;
+      width: 40%;
+      padding: 10px 15px;
+      margin-top: 7px;
     }
     
     /* Navigation bar */
