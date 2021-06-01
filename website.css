@@ -61,9 +61,10 @@
     
     .aside{
       background-color: rgb(255, 255, 255);
-      width: 40%;
+      width: 50%;
       padding: 10px 15px;
       margin-top: 7px;
+      margin-left:10px;
       color:black;
     }
     
