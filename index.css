@@ -103,7 +103,7 @@
       overflow: hidden;
     }
     .dropdown .dropbtn {
-      background-color: slategrey;
+      background-color: rgb(181, 182, 138);
       border: none; 
       outline: none;
       margin: 0;
@@ -120,7 +120,7 @@
     }
     
     .navbar a:hover, .dropdown .dropbtn a:hover .dropbtn {
-      background-color: rgb(168, 184, 201);
+      background-color: rgb(193, 196, 149);
     }
     
     .dropdown-content {
