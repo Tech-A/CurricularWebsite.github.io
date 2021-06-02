@@ -103,7 +103,7 @@
       overflow: hidden;
     }
     .dropdown .dropbtn {
-      background-color: rgb(181, 182, 138);
+      background-color: rgb(228, 182, 67);
       border: none; 
       outline: none;
       margin: 0;
@@ -120,7 +120,7 @@
     }
     
     .navbar a:hover, .dropdown .dropbtn a:hover .dropbtn {
-      background-color: rgb(193, 196, 149);
+      background-color: rgb(230, 198, 17);
     }
     
     .dropdown-content {
@@ -212,7 +212,6 @@
       background-color: #555;
       color: white;
     } 
-    
     /* Image comparison slider */
     
     .wrapper {
