@@ -332,71 +332,7 @@
         width: 200px;
       }
     
-    /* Columns with images and text flex */
-    .flex-container {
-        display: flex;
-    }
-    .flex-container::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    .flex-child {
-        flex: 1;
-    }  
-    .flex-child img {
-      display: block;
-      width: 325px;
-      height: 300px;
-      opacity: 0.75;
-      margin: 10px;
-      margin-bottom: 100px;
-    }
-    .flex-child:first-child {
-        margin-left: 20px;
-    } 
-    
-    /* Overlay icons */
-    .flex-child {
-      position: relative;
-      width: 50%;
-    }
-    
-    .image {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    
-    .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 325px;
-      height: 300px;
-      opacity: 0;
-      transition: .5s ease;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.5); ;
-    }
-    
-    .flex-child:hover .overlay {
-      opacity: 1;
-    }
-    
-    .text {
-      color: white;
-      font-size: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
+
     
 
     /* The browser window */
