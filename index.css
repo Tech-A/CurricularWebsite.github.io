@@ -344,9 +344,10 @@
   border: 3px solid #f1f1f1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  width: 500px;
+  margin: auto;
 }
 
-/* Container for columns and the top "toolbar" */
 .row {
   padding: 10px;
   background: #f1f1f1;
@@ -354,7 +355,6 @@
   border-top-right-radius: 4px;
 }
 
-/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
 }
@@ -371,7 +371,6 @@
   width: 75%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -400,7 +399,6 @@ input[type=text] {
   padding: 5px;
 }
 
-/* Three bars (hamburger menu) */
 .bar {
   width: 17px;
   height: 3px;
@@ -409,7 +407,13 @@ input[type=text] {
   display: block;
 }
 
-/* Page content */
 .content {
   padding: 10px;
+}
+
+.browser-h3 {
+  font-family: Arial;
+}
+.browser-text {
+  font-family: Arial;
 }
