@@ -336,9 +336,6 @@
     
 
     /* The browser window */
-    body {
-      font-family: Arial
-    }
     
     * {
       box-sizing: border-box;
