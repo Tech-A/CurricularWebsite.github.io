@@ -163,7 +163,7 @@
         }
         
         .cover-1 {
-      background-image: linear-gradient(rgba(94, 86, 86, 0.5), rgba(94, 87, 87, 0.5)),url("www.nzherald.co.nz/resizer/008d7VX24aK97onBBYwAOSGfriI=/576x384/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/FW2AO7KALX3ZIAT5SDF3CGOOBI.jpg");
+      background-image: linear-gradient(rgba(94, 86, 86, 0.5), rgba(94, 87, 87, 0.5)),url("https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
       z-index: 3000;
     }
     
