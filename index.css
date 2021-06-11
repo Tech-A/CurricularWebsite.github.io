@@ -7,39 +7,7 @@
     body, html {
         height: 100%;
         }
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%;}  
-}
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
-}
-
-        @media only screen and (max-width:800px) {
-          /* For tablets: */
-          .main {
-            width: 80%;
-            padding: 0;
-          }
-          .right {
-            width: 100%;
-          }
-        }
-        
-        @media only screen and (max-width:500px) {
-          /* For mobile phones: */
-          .menu, .main, .right {
-            width: 100%;
-          }
-        }
-
-        img { max-width: 100%; height: auto; }
-    
-        
         /* text */
     h1 {
       text-align: center;
@@ -215,7 +183,7 @@
     * {
       box-sizing: border-box;
     }
-.container {
+.w3-container {
   border: 3px solid #f1f1f1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
