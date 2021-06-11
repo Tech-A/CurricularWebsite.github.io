@@ -262,7 +262,10 @@ input[type=text] {
 }
 
 .browser-h3 {
-  font-family: Arial;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: White;
+  font-size: 30px;
+
 }
 .browser-text {
   font-family: Arial;
