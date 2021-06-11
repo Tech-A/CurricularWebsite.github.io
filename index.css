@@ -36,6 +36,11 @@
       color:slategray;
       font-family: Georgia, 'Times New Roman', Times, serif;
     }
+    b {
+      text-align:center;
+      font-size: 75px;
+      font-family: 'Times New Roman', Times, serif;
+    }
     
     .aside{
       background-color: rgb(255, 255, 255);
