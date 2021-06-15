@@ -181,7 +181,7 @@
     * {
       box-sizing: border-box;
     }
-.w3-container {
+.container {
   border: 3px solid #f1f1f1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -190,7 +190,7 @@
   margin: auto;
 }
 
-.w3-row {
+.row {
   padding: 10px;
   width: 1000px;
   background: #f1f1f1;
@@ -215,7 +215,7 @@
   width: 75%;
 }
 
-.w3-row:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
