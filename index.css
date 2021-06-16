@@ -172,7 +172,12 @@
       background-color: #555;
       color: white;
     } 
-    
+
+  .pgbreak {
+    background-color: rgb(25, 25, 83);
+    height: 500px;
+    width:100%;
+  }
     
 
     /* The browser window */
