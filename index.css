@@ -1,7 +1,7 @@
 
     /* body */
     body {
-        background-color: rgb(168, 184, 201);
+        background-color: white;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
     
@@ -19,7 +19,7 @@
     
     h2 {text-align: center;
     letter-spacing: 2px;
-    color:white;
+    color:black;
     font-size:80px;
     font-family: 'Times New Roman', Times, serif;
     }
@@ -27,7 +27,7 @@
       margin-left: 100px;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
       letter-spacing: 2px;
-      color: white;
+      color: black;
     }
   
     a {
