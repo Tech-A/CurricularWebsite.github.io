@@ -14,8 +14,22 @@ $('.answer').on('click', function(){
     total += $(this).data('value');
 
     console.log(total);
- 
 
+
+})
+$('finish').on('click', function(){
+    avg = total / questions;
+    var message = '';
+
+    if(avg < 1.5){
+        message = 'You are a 1 type';
+    } else if(avg < 2.5){
+        message = 'You are a 2 type';
+    } else if(avg < 3.5){
+        message = 'You are a 3 type';
+    }else {
+        message = 'You are a 4 type';
+    }
 
 })
 
