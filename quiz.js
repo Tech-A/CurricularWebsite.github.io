@@ -6,7 +6,7 @@ var avg = 0; //store the avg of the answers the user selected
 $('.answer').on('click', function(){
     if($(this).parent().find('.selected').length > 0) {
         total -= $(this).parent().find('.selected').data('value');
-        $(this).parent().find('.selected').removedClass('selected');
+        $(this).parent().find('.selected').removeClass('selected');
     }
 
 
