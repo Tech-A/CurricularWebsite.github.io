@@ -193,6 +193,7 @@
   width: 1000px;
   height:500px;
   margin: auto;
+  background-color: #ddd;
 }
 
 .row {
@@ -269,6 +270,6 @@ input[type=text] {
 }
 .browser-text {
   font-family: Arial;
-  color:white;
+  color:black;
   font-size: 20px;
 }

@@ -1,5 +1,5 @@
 
-var questions = $('.question').length; //stores the number of questions
+var questions = $('.question').length; 
 var total = 0; //store the sum of the answers the user selected
 var avg = 0; //store the avg of the answers the user selected
 
