@@ -19,7 +19,7 @@ $('.answer').on('click', function(){
 })
 $('finish').on('click', function(){
     avg = total / questions;
-    var message = '';
+    var message = ' ';
     if($('selected').length === questions){
         //an answer for every question
      if(avg < 1.5){
@@ -31,13 +31,13 @@ $('finish').on('click', function(){
     }else {
         message = 'You are a 4 type';
     }
-    
+
 } else{
     message = 'You missed at least one question';
 }
 
    
-alert(message);
+  alert(message);
 
 })
 
