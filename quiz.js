@@ -31,6 +31,7 @@ $('finish').on('click', function(){
     }else {
         message = 'You are a 4 type';
     }
+    
 } else{
     message = 'You missed at least one question';
 }
