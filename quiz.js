@@ -17,9 +17,11 @@ $('.answer').on('click', function(){
 
 
 })
+
 $('finish').on('click', function(){
     avg = total / questions;
     var message = ' ';
+    
     if($('selected').length === questions){
         //an answer for every question
      if(avg < 1.5){
