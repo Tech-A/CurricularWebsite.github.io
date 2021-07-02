@@ -63,6 +63,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: Verdana,  Tahoma, sans-serif;
   }
 
 nav ul li a{
