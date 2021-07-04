@@ -71,6 +71,7 @@ nav ul li a{
   padding: 12px 30px;
   text-decoration: none;
   font-size: 20px;
+  font-weight: bold;
 }
 nav ul li a:hover{
   background: rgba(90, 78, 33, 0.795);
