@@ -34,7 +34,6 @@
     a {
       text-decoration: none;
       color:slategray;
-      font-family: Georgia, 'Times New Roman', Times, serif;
     }
     b {
       text-align:center;
@@ -71,7 +70,7 @@ nav ul li a{
   color: #fff;
   padding: 12px 30px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
