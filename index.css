@@ -11,8 +11,7 @@
 
         /* text */
     h1 {
-      float: right;
-  
+      text-align: center;
       color:white;
       font-size: 75px;
       font-family: 'Times New Roman', Times, serif;
