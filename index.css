@@ -11,7 +11,8 @@
 
         /* text */
     h1 {
-      text-align: center;
+      float: right;
+  
       color:white;
       font-size: 75px;
       font-family: 'Times New Roman', Times, serif;
@@ -56,7 +57,7 @@
 
   nav ul{ 
     list-style:none;
-    float:left;
+    float:right;
     margin: 0;
     padding: 0;
     display: flex;
