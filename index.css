@@ -62,7 +62,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    font-family: Arial;
+    font-family: 'Times New Roman', Times, serif;
   }
 
 nav ul li a{
@@ -70,12 +70,11 @@ nav ul li a{
   color: #fff;
   padding: 12px 30px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 nav ul li a:hover{
-  background: rgba(0,0,0,0.7);
+  background: rgba(90, 78, 33, 0.795);
   border-radius: 6px;
 }
 .navsection{
