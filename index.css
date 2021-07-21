@@ -145,8 +145,8 @@ nav ul li a:hover{
       color: black;
       background-color: white;
       text-align: center;
-      font-size: 18px;
-      font-family: Arial;
+      font-size: 22px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
       cursor: pointer;
     }
     .cover-text button:hover {
