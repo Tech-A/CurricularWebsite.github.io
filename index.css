@@ -92,7 +92,9 @@ nav ul li a:hover{
       position: relative;
       overflow: hidden;
         }
-        
+        .covers {
+          background-color: white;
+        }
         .cover-1,
         .cover-2,
         .cover-3,
@@ -101,7 +103,7 @@ nav ul li a:hover{
       background-attachment: fixed;
       background-size: cover;
       height: 50vh;
-      width: 200vh;
+      width: 80%;
         }
         
         .cover-1 {
