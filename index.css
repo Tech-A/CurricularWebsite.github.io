@@ -90,7 +90,7 @@ nav ul li a:hover{
         #slide-3,
         #slide-4 {
       position: relative;
-      overflow: hidden;
+      overflow: scroll;
         }
         .covers {
           background-color: white;
@@ -211,7 +211,6 @@ nav ul li a:hover{
   clear: both;
 }
 
-/* Three dots */
 .dot {
   margin-top: 4px;
   height: 12px;
@@ -221,7 +220,6 @@ nav ul li a:hover{
   display: inline-block;
 }
 
-/* Style the input field */
 input[type=text] {
   width: 100%;
   border-radius: 3px;
