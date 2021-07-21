@@ -79,7 +79,7 @@ nav ul li a:hover{
 .navsection{
   width:100%;
   height:100vh;
-  background-image:linear-gradient(rgba(112, 103, 103, 0.5), rgba(122, 113, 113, 0.5)),url("https://images.unsplash.com/photo-1545477712-051b7e0a44c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=562&q=80");
+  background-image:linear-gradient(rgba(112, 103, 103, 0.5), rgba(122, 113, 113, 0.5)),url("https://images.unsplash.com/photo-1503676685182-2531a01b5b5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1055&q=80");
   background-size:cover;
 }
 .dropdown {
