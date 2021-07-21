@@ -38,11 +38,27 @@
     }
     b {
       text-align:center;
-      font-size: 75px;
+      font-size: 80px;
       font-family: 'Times New Roman', Times, serif;
     }
-  
-    
+  button {
+      border: none;
+      outline: 0;
+      width: 200px;
+      height: 80px;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: white;
+      text-align: center;
+      font-size: 25px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      cursor: pointer;
+    }
+   button:hover {
+      background-color: #555;
+      color: white;
+    } 
     /* Navigation bar */
     
   nav {
@@ -121,7 +137,7 @@ nav ul li a:hover{
 
         
         .cover-text {
-      font-size: 80px;
+      font-size: 60px;
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: #FFFFFF;
       position: absolute;
@@ -135,24 +151,6 @@ nav ul li a:hover{
       transform: translate(-50%);
         }
     
-    .cover-text button {
-      border: none;
-      outline: 0;
-      width: 200px;
-      height: 80px;
-      display: inline-block;
-      padding: 10px 25px;
-      color: black;
-      background-color: rgba(221, 221, 221, 0.685);
-      text-align: center;
-      font-size: 25px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      cursor: pointer;
-    }
-    .cover-text button:hover {
-      background-color: #555;
-      color: white;
-    } 
 
   .pgbreak {
     background-color: rgb(20, 35, 117);
