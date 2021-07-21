@@ -90,7 +90,7 @@ nav ul li a:hover{
         #slide-3,
         #slide-4 {
       position: relative;
-      overflow: scroll;
+      overflow: hidden;
         }
         .covers {
           background-color: white;
@@ -106,7 +106,6 @@ nav ul li a:hover{
       margin:auto;
       height: 50vh;
       width: 85%;
-      overflow: scroll;
         }
         
         .cover-1 {
