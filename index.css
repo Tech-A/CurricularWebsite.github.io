@@ -145,7 +145,7 @@ nav ul li a:hover{
     .cover-text button {
       background-color: white;
       border:white;
-      outline: 0;
+      outline: 12px;
       width: 200px;
       height: 70px;
       display: inline-block;
