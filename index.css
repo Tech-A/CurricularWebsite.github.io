@@ -73,7 +73,8 @@ nav ul li a{
   text-transform: uppercase;
 }
 nav ul li a:hover{
-  background: rgba(126, 123, 114, 0.445);
+  background: white;
+  color:black;
   border-radius: 5px;
 }
 .navsection{
