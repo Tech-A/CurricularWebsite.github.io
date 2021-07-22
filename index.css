@@ -73,7 +73,7 @@ nav ul li a{
   text-transform: uppercase;
 }
 nav ul li a:hover{
-  background: rgba(94, 91, 79, 0.795);
+  background: rgba(126, 123, 114, 0.445);
   border-radius: 5px;
 }
 .navsection{
@@ -152,6 +152,7 @@ nav ul li a:hover{
       font-size: 22px;
       font-family: Georgia, 'Times New Roman', Times, serif;
       cursor: pointer;
+      transition-duration: 0.4s;
     }
     .cover-text button:hover {
       background-color: #555;
