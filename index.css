@@ -144,6 +144,7 @@ nav ul li a:hover{
     
     .cover-text button {
       border:white;
+      border-width: 1px;
       background: none;
       outline: 0;
       width: 200px;
