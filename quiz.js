@@ -5,7 +5,14 @@ var avg = 0; //store the avg of the answers the user selected
 var myQuestions = $('section.q-n-a');
 
 shuffle(myQuestions);
-console.log(myQuestions);
+//console.log(myQuestions);
+myQuestions.each( function(){
+    var myAnswers = $(this).find('.answer');
+    shuffle(myAnswers);
+    $(this).find('answers').html(myAnswers);
+})
+
+$('#quiz-area').html(myQuestions);
 
 function shuffle(array){
 
