@@ -2,6 +2,19 @@
 var questions = $('.question').length; 
 var total = 0; //store the sum of the answers the user selected
 var avg = 0; //store the avg of the answers the user selected
+var myQuestions = $('section.q-n-a');
+
+shuffle(myQuestions);
+console.log(myQuestions);
+
+function shuffle(array){
+
+    for(let i = array.length-1; i >0; i--){
+        let j = Math.floor( Math.random() * (i+1))
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 
 $('.answer').on('click', function(){
     if($(this).parent().find('.selected').length > 0) {
