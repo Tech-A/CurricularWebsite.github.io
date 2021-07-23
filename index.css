@@ -51,7 +51,10 @@
      color:rgb(221, 215, 181);
      transition-duration: 1s;
    }
- 
+ .w3-serif {
+   font-size: 20px;
+   color:black;
+ }
     /* Navigation bar */
     
   nav {
