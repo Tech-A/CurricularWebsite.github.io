@@ -58,9 +58,8 @@ $('finish').on('click', function(){
     message = 'You missed at least one question';
 }
 
-   
-  alert(message);
+function myFunction() {
+    alert("message");
+  }
 
 })
-
-
