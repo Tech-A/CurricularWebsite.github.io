@@ -50,7 +50,7 @@ $('finish').on('click', function(){
         message = 'You are a 2 type';
     } else if(avg < 3.5){
         message = 'You are a 3 type';
-    }else {
+    } else {
         message = 'You are a 4 type';
     }
 
@@ -59,7 +59,7 @@ $('finish').on('click', function(){
 }
 
 function myFunction() {
-    alert("message");
+    alert(message);
   }
 
 })
