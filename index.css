@@ -47,7 +47,6 @@
     color:white;
     font-size: 75px;
     font-family: 'Times New Roman', Times, serif;
-    animation-play-state: running;
    }
    i:hover {
      color:rgb(221, 215, 181);
