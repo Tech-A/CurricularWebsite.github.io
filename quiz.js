@@ -3,16 +3,24 @@ var questions = $('.question').length;
 var total = 0; //store the sum of the answers the user selected
 var avg = 0; //store the avg of the answers the user selected
 var myQuestions = $('section.q-n-a');
+var currQ = 0;
 
 shuffle(myQuestions);
 //console.log(myQuestions);
-myQuestions.each( function(){
+myQuestions.each( function(index){
     var myAnswers = $(this).find('.answer');
     shuffle(myAnswers);
     $(this).find('answers').html(myAnswers);
+    $(this).attr('id', index+1);
+
+    if(index == 0){
+        $(this).find('previous').remove();
+    }
 })
 
 $('#quiz-area').html(myQuestions);
+
+function showQ()
 
 function shuffle(array){
 
