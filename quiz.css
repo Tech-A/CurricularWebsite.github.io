@@ -9,10 +9,7 @@ padding: 20px;
 border-radius: 1em;}
 
 h1{
-text-align: center;
 color:white; 
-font-family: Georgia, Times, 'Times New Roman', serif;
-font-size: 60px;
 }
 
 h3.question{
@@ -61,7 +58,7 @@ width:30%
 }
 .previous{ 
     float:left;
-}
+} 
 .button:hover{
     background-color: #98B9AB;}
 .button-holder{
