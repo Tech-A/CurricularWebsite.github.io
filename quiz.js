@@ -30,7 +30,7 @@ function shuffle(array){
     }
 }
 
-
+//When the user clicks / picks an answer
 $('.answer').on('click', function(){
     if($(this).parent().find('.selected').length > 0) {
         total -= $(this).parent().find('.selected').data('value');
@@ -45,7 +45,7 @@ $('.answer').on('click', function(){
 
 
 })
-
+//When they click the submit (What am I) button at the bottom:
 $('finish').on('click', function(){
     avg = total / questions;
     var message = ' ';
@@ -64,10 +64,12 @@ $('finish').on('click', function(){
 
 } else{
     message = 'You missed at least one question';
-}
+}//^ if they forget a question
+
 
 function myFunction() {
     alert(message);
-  }
+  }//--Shows their result as an alert 
 
 })
+
