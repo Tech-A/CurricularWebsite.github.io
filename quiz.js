@@ -3,7 +3,7 @@ var questions = $('.question').length;
 var total = 0; //store the sum of the answers the user selected
 var avg = 0; //store the avg of the answers the user selected
 var myQuestions = $('section.q-n-a');
-var currQ = 0;
+var currQ = 0; //question we are currently showing
 
 shuffle(myQuestions);
 //console.log(myQuestions);
@@ -13,7 +13,7 @@ myQuestions.each( function(index){
     $(this).find('answers').html(myAnswers);
     $(this).attr('id', index+1);
 
-    if(index == 0){
+    if(index == 0){//remove the previous button from the first question
         $(this).find('previous').remove();
     }
 })
