@@ -19,7 +19,7 @@ function q1a2Function() {
 function q1a3Function() {
     q1a1.style.background = "white";
     q1a2.style.background = "white";
-    q1a3.style.background = "gold";
+    q1a3.style.background = "blue";
     q1a4.style.background = "white";
     q1Score = 2
 }
@@ -27,7 +27,7 @@ function q1a4Function() {
     q1a1.style.background = "white";
     q1a2.style.background = "white";
     q1a3.style.background = "white";
-    q1a4.style.background = "gold";
+    q1a4.style.background = "yellow";
     q1Score = 2
 }
 function q1Submit() {
