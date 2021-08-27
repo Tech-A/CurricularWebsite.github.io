@@ -5,11 +5,29 @@ let totalScore = 0
 function q1a1Function() {
     q1a1.style.background = "blue";
     q1a2.style.background = "white";
+    q1a3.style.background = "white";
+    q1a4.style.background = "white";
     q1Score = 1
 }
 function q1a2Function() {
     q1a1.style.background = "white";
-    q1a2.style.background = "red";
+    q1a2.style.background = "yellow";
+    q1a3.style.background = "white";
+    q1a4.style.background = "white";
+    q1Score = 2
+}
+function q1a3Function() {
+    q1a1.style.background = "white";
+    q1a2.style.background = "white";
+    q1a3.style.background = "gold";
+    q1a4.style.background = "white";
+    q1Score = 2
+}
+function q1a4Function() {
+    q1a1.style.background = "white";
+    q1a2.style.background = "white";
+    q1a3.style.background = "white";
+    q1a4.style.background = "gold";
     q1Score = 2
 }
 function q1Submit() {
