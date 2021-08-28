@@ -10,10 +10,9 @@ color:darkblue;
 font-size: 60px;
 }
 .answers {font-size: 20px;
-    color:white;}
-    
+    color:black;}
+
 .answers:hover{
-    
-    color:goldenrod; 
+    background-color:goldenrod; 
 }
 
