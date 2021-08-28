@@ -1,7 +1,7 @@
 let q1a1 = document.querySelector("#question1answer1");
 let q1a2 = document.querySelector("#question1answer2");
-let q1a4 = document.querySelector("#question1answer3");
-let q1a3 = document.querySelector("#question1answer4");
+let q1a3 = document.querySelector("#question1answer3");
+let q1a4 = document.querySelector("#question1answer4");
 var q1Score = 0
 var totalScore = 0
 function q1a1Function() {
