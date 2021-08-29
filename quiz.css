@@ -5,10 +5,10 @@ font-size:100%;
 text-align: center;
 }
     .header {
-        padding:60px;
+        padding:80px;
     color:white;
 text-align: center;
-background:rgba(212, 174, 77, 0.747);}
+background:rgb(155, 149, 149);}
     span {
     float:left;
     font-size:30px;
