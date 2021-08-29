@@ -7,24 +7,24 @@ let q1a4 = document.querySelector("#question1answer4");
 let q1Score = 0
 
 function q1a1Function() {
-    q1a1.style.background = "goldenrod";
+    q1a1.style.background = "rgb(168, 155, 82)";
     q1a2.style.background = "lightslategray";
     q1a3.style.background = "lightslategray";
     q1a4.style.background = "lightslategray";
     q1Score = 1
 }
 function q1a2Function() {
-    q1a1.style.background = "white";
-    q1a2.style.background = "blue";
-    q1a3.style.background = "white";
-    q1a4.style.background = "white";
+    q1a1.style.background = "lightslategray";
+    q1a2.style.background = "goldenrod";
+    q1a3.style.background = "lightslategray";
+    q1a4.style.background = "lightslategray";
     q1Score = 2
 }
 function q1a3Function() {
-    q1a1.style.background = "white";
-    q1a2.style.background = "white";
-    q1a3.style.background = "blue";
-    q1a4.style.background = "white";
+    q1a1.style.background = "lightslategrey";
+    q1a2.style.background = "lightslategrey";
+    q1a3.style.background = "goldenrod";
+    q1a4.style.background = "lightslategrey";
     q1Score = 3
 }
 function q1a4Function() {
