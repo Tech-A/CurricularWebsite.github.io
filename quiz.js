@@ -28,10 +28,10 @@ function q1a3Function() {
     q1Score = 3
 }
 function q1a4Function() {
-    q1a1.style.background = "white";
-    q1a2.style.background = "white";
-    q1a3.style.background = "white";
-    q1a4.style.background = "blue";
+    q1a1.style.background = "lightslategrey";
+    q1a2.style.background = "lightslategrey";
+    q1a3.style.background = "lightslategrey";
+    q1a4.style.background = "goldenrod";
     q1Score = 4
 }
 
