@@ -7,7 +7,7 @@ let q1a4 = document.querySelector("#question1answer4");
 let q1Score = 0
 
 function q1a1Function() {
-    q1a1.style.background = "goldenrod";
+    q1a1.style.background = "rgba(128, 108, 57, 0.747)";
     q1a2.style.background = "lightslategray";
     q1a3.style.background = "lightslategray";
     q1a4.style.background = "lightslategray";
