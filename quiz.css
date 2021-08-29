@@ -1,5 +1,5 @@
 body {
-background-color: #ddd; 
+background-color: rgba(109, 109, 109, 0.938); 
 font-family:'Times New Roman', Times, serif;
 font-size:100%;
 text-align: center;
@@ -8,7 +8,7 @@ text-align: center;
         padding:80px;
     color:white;
 text-align: center;
-background:rgba(31, 31, 77, 0.925);}
+background:lightslategray;}
     span {
     float:left;
     font-size:30px;
