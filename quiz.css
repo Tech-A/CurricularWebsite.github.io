@@ -4,13 +4,7 @@ font-family:'Times New Roman', Times, serif;
 font-size:100%;
 text-align: center;
 }
-    .header {
-        padding:110px;
-    color:white;
-text-align: center;
-background:rgba(148, 131, 88, 0.973);
-padding-top:50px;}
-
+  
     span {
     float:left;
     font-size:30px;
