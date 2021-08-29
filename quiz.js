@@ -15,7 +15,7 @@ function q1a1Function() {
 }
 function q1a2Function() {
     q1a1.style.background = "lightslategray";
-    q1a2.style.background = "goldenrod";
+    q1a2.style.background = "rgb(145, 111, 27)";
     q1a3.style.background = "lightslategray";
     q1a4.style.background = "lightslategray";
     q1Score = 2
@@ -23,7 +23,7 @@ function q1a2Function() {
 function q1a3Function() {
     q1a1.style.background = "lightslategrey";
     q1a2.style.background = "lightslategrey";
-    q1a3.style.background = "goldenrod";
+    q1a3.style.background = "rgb(145, 111, 27)";
     q1a4.style.background = "lightslategrey";
     q1Score = 3
 }
@@ -31,7 +31,7 @@ function q1a4Function() {
     q1a1.style.background = "lightslategrey";
     q1a2.style.background = "lightslategrey";
     q1a3.style.background = "lightslategrey";
-    q1a4.style.background = "goldenrod";
+    q1a4.style.background = "rgb(145, 111, 27)";
     q1Score = 4
 }
 
@@ -42,31 +42,31 @@ let q2a4 = document.querySelector("#question2answer4");
 let q2Score = 0;
 
 function q2a1Function() {
-    q2a1.style.background = "blue";
-    q2a2.style.background = "white";
-    q2a3.style.background = "white";
-    q2a4.style.background = "white";
+    q2a1.style.background = "rgb(145, 111, 27)";
+    q2a2.style.background = "lightslategray";
+    q2a3.style.background = "lightslategray";
+    q2a4.style.background = "lightslategray";
     q2Score = 1
 }
 function q2a2Function() {
-    q2a1.style.background = "white";
-    q2a2.style.background = "blue";
-    q2a3.style.background = "white";
-    q2a4.style.background = "white";
+    q2a1.style.background = "lightslategray";
+    q2a2.style.background = "rgb(145, 111, 27)";
+    q2a3.style.background = "lightslategray";
+    q2a4.style.background = "lightslategray";
     q2Score = 2
 }
 function q2a3Function() {
-    q2a1.style.background = "white";
-    q2a2.style.background = "white";
-    q2a3.style.background = "blue";
-    q2a4.style.background = "white";
+    q2a1.style.background = "lightslategrey";
+    q2a2.style.background = "lightslategrey";
+    q2a3.style.background = "rgb(145, 111, 27)";
+    q2a4.style.background = "lightslategrey";
     q2Score = 3
 }
 function q2a4Function() {
-    q2a1.style.background = "white";
-    q2a2.style.background = "white";
-    q2a3.style.background = "white";
-    q2a4.style.background = "blue";
+    q2a1.style.background = "lightslategrey";
+    q2a2.style.background = "lightslategrey";
+    q2a3.style.background = "lightslategrey";
+    q2a4.style.background = "rgb(145, 111, 27)";
     q2Score = 4
 }
 
@@ -77,31 +77,31 @@ let q3a4 = document.querySelector("#question3answer4");
 let q3Score = 0;
 
 function q3a1Function() {
-    q3a1.style.background = "blue";
-    q3a2.style.background = "white";
-    q3a3.style.background = "white";
-    q3a4.style.background = "white";
+    q3a1.style.background = "rgb(145, 111, 27)";
+    q3a2.style.background = "lightslategray";
+    q3a3.style.background = "lightslategray";
+    q3a4.style.background = "lightslategray";
     q3Score = 1
 }
 function q3a2Function() {
-    q3a1.style.background = "white";
-    q3a2.style.background = "blue";
-    q3a3.style.background = "white";
-    q3a4.style.background = "white";
+    q3a1.style.background = "lightslategray";
+    q3a2.style.background = "rgb(145, 111, 27)";
+    q3a3.style.background = "lightslategray";
+    q3a4.style.background = "lightslategray";
     q3Score = 2
 }
 function q3a3Function() {
-    q3a1.style.background = "white";
-    q3a2.style.background = "white";
-    q3a3.style.background = "blue";
-    q3a4.style.background = "white";
+    q3a1.style.background = "lightslategrey";
+    q3a2.style.background = "lightslategrey";
+    q3a3.style.background = "rgb(145, 111, 27)";
+    q3a4.style.background = "lightslategrey";
     q3Score = 3
 }
 function q3a4Function() {
-    q3a1.style.background = "white";
-    q3a2.style.background = "white";
-    q3a3.style.background = "white";
-    q3a4.style.background = "blue";
+    q3a1.style.background = "lightslategrey";
+    q3a2.style.background = "lightslategrey";
+    q3a3.style.background = "lightslategrey";
+    q3a4.style.background = "rgb(145, 111, 27)";
     q3Score = 4
 }
 
