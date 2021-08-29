@@ -8,13 +8,13 @@ text-align: center;
         padding:110px;
     color:white;
 text-align: center;
-background:rgba(148, 131, 88, 0.973);}
+background:rgba(148, 131, 88, 0.973);
+}
 
     span {
     float:left;
     font-size:30px;
     padding-right: 10px;
-    padding-bottom: 15px;
     cursor:pointer;
     color:white;
     }
