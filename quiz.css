@@ -6,8 +6,8 @@ text-align: center;
 }
 .navbar {
     overflow: hidden;
-    background-color: lightslategray;
     height:45px;}
+    
     span {
     float:left;
     font-size:30px;
