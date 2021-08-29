@@ -77,6 +77,9 @@ h3 {
     color:rgb(48, 45, 45);
     font-size: 30px;
 }
+i {
+    color:rgb(212, 174, 77);
+}
 .answers {font-size: 20px;
     color:white;
     background-color: lightslategray;
