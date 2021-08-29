@@ -1,19 +1,23 @@
 body {
-background-color: rgba(109, 109, 109, 0.938); 
+background-color: rgb(203, 212, 221); 
 font-family:'Times New Roman', Times, serif;
 font-size:100%;
 text-align: center;
 }
+hr {
+    color:black;
+}
 .navbar {
     overflow: hidden;
     height:45px;}
-    
+
     span {
     float:left;
     font-size:30px;
     padding-right: 10px;
+    padding-bottom:25px;
     cursor:pointer;
-    color:white;
+    color:rgb(37, 35, 35);
     }
     
     .overlay {
@@ -68,11 +72,11 @@ text-align: center;
     }
     
 h1{
-color:white; 
+color:rgba(21, 21, 65, 0.911); 
 font-size: 80px;
 }
 h3 {
-    color:white;
+    color:rgb(48, 45, 45);
     font-size: 30px;
 }
 .answers {font-size: 20px;
