@@ -5,10 +5,11 @@ font-size:100%;
 text-align: center;
 }
     .header {
-        padding:100px;
+        padding:110px;
     color:white;
 text-align: center;
 background:rgba(148, 131, 88, 0.973);}
+
     span {
     float:left;
     font-size:30px;
