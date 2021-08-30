@@ -105,11 +105,79 @@ function q3a4Function() {
     q3Score = 4
 }
 
+let q4a1 = document.querySelector("#question4answer1");
+let q4a2 = document.querySelector("#question4answer2");
+let q4a3 = document.querySelector("#question4answer3");
+let q4a4 = document.querySelector("#question4answer4");
+let q4Score = 0;
+
+function q4a1Function() {
+    q4a1.style.background = "rgb(145, 111, 27)";
+    q4a2.style.background = "lightslategray";
+    q4a3.style.background = "lightslategray";
+    q4a4.style.background = "lightslategray";
+    q4Score = 1
+}
+function q4a2Function() {
+    q4a1.style.background = "lightslategray";
+    q4a2.style.background = "rgb(145, 111, 27)";
+    q4a3.style.background = "lightslategray";
+    q4a4.style.background = "lightslategray";
+    q4Score = 2
+}
+function q4a3Function() {
+    q4a1.style.background = "lightslategrey";
+    q4a2.style.background = "lightslategrey";
+    q4a3.style.background = "rgb(145, 111, 27)";
+    q4a4.style.background = "lightslategrey";
+    q4Score = 3
+}
+function q4a4Function() {
+    q4a1.style.background = "lightslategrey";
+    q4a2.style.background = "lightslategrey";
+    q4a3.style.background = "lightslategrey";
+    q4a4.style.background = "rgb(145, 111, 27)";
+    q4Score = 4
+}
+let q5a1 = document.querySelector("#question5answer1");
+let q5a2 = document.querySelector("#question5answer2");
+let q5a3 = document.querySelector("#question5answer3");
+let q5a4 = document.querySelector("#question5answer4");
+let q5Score = 0;
+
+function q5a1Function() {
+    q5a1.style.background = "rgb(145, 111, 27)";
+    q5a2.style.background = "lightslategray";
+    q5a3.style.background = "lightslategray";
+    q5a4.style.background = "lightslategray";
+    q5Score = 1
+}
+function q5a2Function() {
+    q5a1.style.background = "lightslategray";
+    q5a2.style.background = "rgb(145, 111, 27)";
+    q5a3.style.background = "lightslategray";
+    q5a4.style.background = "lightslategray";
+    q5Score = 2
+}
+function q5a3Function() {
+    q5a1.style.background = "lightslategrey";
+    q5a2.style.background = "lightslategrey";
+    q5a3.style.background = "rgb(145, 111, 27)";
+    q5a4.style.background = "lightslategrey";
+    q5Score = 3
+}
+function q5a4Function() {
+    q5a1.style.background = "lightslategrey";
+    q5a2.style.background = "lightslategrey";
+    q5a3.style.background = "lightslategrey";
+    q5a4.style.background = "rgb(145, 111, 27)";
+    q5Score = 4
+}
 function qSubmit() {
-    totalScore = totalScore + q1Score + q2Score + q3Score;
+    totalScore = totalScore + q1Score + q2Score + q3Score + q4Score + q5Score;
     console.log(totalScore);
     
-    let averageScore = totalScore/3;
+    let averageScore = totalScore/5;
 
 if (averageScore < 1.5){
     message = 'Sports';
