@@ -193,8 +193,6 @@ message = 'You missed at least one question';
 }
 
 
-
 function qFinish() {
     alert(message);
-
 }
