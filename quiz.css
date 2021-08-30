@@ -99,8 +99,15 @@ b {
 button {
     background-color: #C2A83E;
     color: white;
+    border-radius: 10px;
     padding: 10px 5px;
     text-align: center;
     cursor: pointer; 
-    font-size: 2em;
+    font-size: 30px;
+    border-color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+button:hover {
+    background-color:white;
+    color:rgb(53, 53, 53);
 }
