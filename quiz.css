@@ -104,4 +104,5 @@ button {
     text-align: center;
     cursor: pointer; 
     font-size: 2em;
+    border-color: none;
 }
