@@ -37,47 +37,75 @@
      </div>
      <hr>
 
-<h1 class="w3-serif">Extracurricular quiz</h1>  
-        <div>
+ 
+
+<div id="intro">
+    <h1 class="w3-serif">Extracurricular quiz</h1> 
+    <h2 id="headerText">What is your name?</h2><br>
+</div>
+
+<div id="greetingInput">
+    <input id="userName">
+    <button class="greeting" onclick="greeting()">Submit</button>
+</div>
+
+        <div id ="question1">
             <h3>Which adjectives <b>best</b> describe your personality?</h3>
             <div class="answers" id="question1answer1" onclick="q1a1Function()">Active</div>
             <div class="answers" id="question1answer2" onclick="q1a2Function()">Passionate</div>
             <div class="answers" id="question1answer3" onclick="q1a3Function()">Creative</div>
-            <div class="answers" id="question1answer4" onclick="q1a4Function()">Caring</div> <br>
+            <div class="answers" id="question1answer4" onclick="q1a4Function()">Caring</div> 
+            <br>
+            <div id = "question1button" onclick ="submitq1()"><button>Next</button></div>
         </div>
 
-        <div>
+        <div id ="question2">
             <h3>You <b>value</b> people who...</h3>
             <div class="answers" id="question2answer1" onclick="q2a1Function()">Are fun to be around</div>
             <div class="answers" id="question2answer2" onclick="q2a2Function()">Listen to you</div>
             <div class="answers" id="question2answer3" onclick="q2a3Function()">Put in a lot of effort in what they do</div>
             <div class="answers" id="question2answer4" onclick="q2a4Function()">Are kind to you</div> <br>
+            <br>
+            <button id = "question2prevbutton" onclick ="returnq2()">Previous</button>
+            <button id = "question2button" onclick ="submitq2()">Next</button>
         </div>
-        <div>
+
+        <div id ="question3">
             <h3>What is your <b>activity level?</b></h3>
             <div class="answers" id="question3answer1" onclick="q3a1Function()">Always moving at every chance you get</div>
             <div class="answers" id="question3answer2" onclick="q3a2Function()">Can move when you are asked to</div>
             <div class="answers" id="question3answer3" onclick="q3a3Function()">Little to none</div>
             <div class="answers" id="question3answer4" onclick="q3a4Function()">When you get around to it</div> <br>
+            <br>
+            <button id = "question3prevbutton" onclick ="returnq3()">Previous</button>
+            <button id = "question3button" onclick ="submitq3()">Next</button>
         </div>
-        <div>
+        <div id="question4">
             <h3>What is your <b>typical</b> style choice?</h3>
             <div class="answers" id="question4answer1" onclick="q4a1Function()">Always moving at every chance you get</div>
             <div class="answers" id="question4answer2" onclick="q4a2Function()">Can move when you are asked to</div>
             <div class="answers" id="question4answer3" onclick="q4a3Function()">Little to none</div>
             <div class="answers" id="question4answer4" onclick="q4a4Function()">When you get around to it</div> <br>
+            <br>
+            <button id = "question4prevbutton" onclick ="returnq4()">Previous</button>
+            <button id = "question4button" onclick ="submitq4()">Next</button>
         </div>
-        <div>
+        <div id = "question5">
             <h3>What would you rather do on a typical Sunday afternoon?</h3>
             <div class="answers" id="question5answer1" onclick="q5a1Function()">Hike with friends</div>
             <div class="answers" id="question5answer2" onclick="q5a2Function()">Listen to music</div>
             <div class="answers" id="question5answer3" onclick="q5a3Function()">Draw and paint</div>
             <div class="answers" id="question5answer4" onclick="q5a4Function()">Volunteer at an animal shelter</div> <br>
+            <br>
+            <button id = "question5prevbutton" onclick ="returnq5()">Previous</button>
+            <button id = "question5button" onclick ="submitq5()">Next</button>
         </div>
 <br>
 <br>
-<button onclick="qSubmit()" >Submit</button>
+<div id="finish">
+        <button id = "prevbutton" onclick ="returnfini()">Previous</button>
         <button onclick="qFinish()">What am I?</button>
+    </div>
        
         <br>
         <br>

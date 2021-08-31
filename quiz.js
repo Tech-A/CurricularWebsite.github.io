@@ -1,3 +1,132 @@
+var userName = document.querySelector("#userName");
+let headerText = document.querySelector("#headerText");
+let greetingInput = document.querySelector("#greetingInput");
+let q1 = document.querySelector("#question1");
+let q2 = document.querySelector("#question2");
+let q3 = document.querySelector("#question3");
+let q4 = document.querySelector("#question4");
+let q5 = document.querySelector("#question5");
+let fini = document.querySelector("#finish");
+
+
+q1.style.display = "none";
+q2.style.display = "none";
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+
+function greeting() {
+    headerText.innerHTML = ""
+    headerText.innerHTML = "Hello " + userName.value + ", welcome to my quiz."
+greetingInput.style.display = "none";
+q1.style.display = "block";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+}
+function submitq1() {
+    q1.style.display = "none";
+    q2.style.display = "block"
+    greetingInput.style.display = "none";
+    q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+}
+function submitq2(){
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "block";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="none"; 
+}
+function returnq2(){
+q1.style.display = "block";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+}
+function submitq3(){
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "block";
+    q5.style.display = "none";
+    fini.style.display ="none"; 
+}
+function returnq3(){
+q1.style.display = "none";
+q2.style.display = "block"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+}
+function submitq4(){
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "block";
+    fini.style.display ="none"; 
+}
+function returnq4(){
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "block";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+}
+function submitq5(){
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="block"; 
+
+    totalScore = totalScore + q1Score + q2Score + q3Score + q4Score + q5Score;
+    
+    let averageScore = totalScore/5;
+
+if (averageScore < 1.5){
+    message = 'Sports';
+} else if (averageScore < 2.5){
+    message = 'Music';
+} else if(averageScore < 3.5){
+    message = 'Arts';
+} else if(averageScore < 4.5){
+    message = 'Service';
+} else {
+message = 'You missed at least one question';
+}
+}
+
+function returnq5(){
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "block";
+q5.style.display = "none";
+fini.style.display ="none";
+}
+
+function returnfini() {
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "block";
+fini.style.display ="none";
+}
+
 let totalScore = 0
 
 let q1a1 = document.querySelector("#question1answer1");
@@ -172,24 +301,6 @@ function q5a4Function() {
     q5a3.style.background = "lightslategrey";
     q5a4.style.background = "rgb(145, 111, 27)";
     q5Score = 4
-}
-function qSubmit() {
-    totalScore = totalScore + q1Score + q2Score + q3Score + q4Score + q5Score;
-    console.log(totalScore);
-    
-    let averageScore = totalScore/5;
-
-if (averageScore < 1.5){
-    message = 'Sports';
-} else if (averageScore < 2.5){
-    message = 'Music';
-} else if(averageScore < 3.5){
-    message = 'Arts';
-} else if(averageScore < 4.5){
-    message = 'Service';
-} else {
-message = 'You missed at least one question';
-}
 }
 
 

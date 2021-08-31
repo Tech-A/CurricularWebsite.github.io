@@ -73,9 +73,18 @@ h1{
 color:rgba(21, 21, 65, 0.911); 
 font-size: 80px;
 }
+h2{ color:rgb(39, 38, 38);
+    font-size:40px;
+}
 h3 {
     color:rgb(48, 45, 45);
     font-size: 30px;
+}
+.greeting {
+    font-size:20px;
+    text-align: center;
+    padding: 5px 5px;
+    margin-left:3px;
 }
 b {
     color:rgb(126, 102, 43);
@@ -91,7 +100,9 @@ b {
     font-size: 1.5em;
     margin: 10px auto 0;
     }
-
+#userName {
+    font-size:20px;
+}
 .answers:hover{
     background-color:rgb(212, 174, 77); 
 }
@@ -106,6 +117,10 @@ button {
     font-size: 30px;
     border-color: white;
     font-family:'Times New Roman', Times, serif;
+}
+
+#questionbutton {
+    width:30px;
 }
 button:hover {
     background-color:white;
