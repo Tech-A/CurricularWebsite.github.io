@@ -6,27 +6,26 @@ let q2 = document.querySelector("#question2");
 let q3 = document.querySelector("#question3");
 let q4 = document.querySelector("#question4");
 let q5 = document.querySelector("#question5");
-let fini = document.querySelector("#finish");
+let fini = document.querySelector("#moreinfo");
 
+let arts = document.querySelector("#Artsinfo");
+let sports = document.querySelector("#Sportsinfo");
+let music = document.querySelector("#Musicinfo");
+let service = document.querySelector("#Serviceinfo");
 
-q1.style.display = "none";
+q1.style.display = "block";
 q2.style.display = "none";
 q3.style.display = "none";
 q4.style.display = "none";
 q5.style.display = "none";
 fini.style.display ="none";
-
-function greeting() {
-    headerText.innerHTML = ""
-    headerText.innerHTML = "Hello " + userName.value + ", welcome to my quiz."
 greetingInput.style.display = "none";
-q1.style.display = "block";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-}
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+
+
 function submitq1() {
     q1.style.display = "none";
     q2.style.display = "block"
@@ -35,6 +34,11 @@ function submitq1() {
 q4.style.display = "none";
 q5.style.display = "none";
 fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 function submitq2(){
     q1.style.display = "none";
@@ -43,6 +47,11 @@ function submitq2(){
     q4.style.display = "none";
     q5.style.display = "none";
     fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 function returnq2(){
 q1.style.display = "block";
@@ -51,6 +60,11 @@ q3.style.display = "none";
 q4.style.display = "none";
 q5.style.display = "none";
 fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 function submitq3(){
     q1.style.display = "none";
@@ -59,6 +73,11 @@ function submitq3(){
     q4.style.display = "block";
     q5.style.display = "none";
     fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 function returnq3(){
 q1.style.display = "none";
@@ -67,6 +86,11 @@ q3.style.display = "none";
 q4.style.display = "none";
 q5.style.display = "none";
 fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 function submitq4(){
     q1.style.display = "none";
@@ -75,6 +99,11 @@ function submitq4(){
     q4.style.display = "none";
     q5.style.display = "block";
     fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 function returnq4(){
 q1.style.display = "none";
@@ -83,6 +112,11 @@ q3.style.display = "block";
 q4.style.display = "none";
 q5.style.display = "none";
 fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 function submitq5(){
     q1.style.display = "none";
@@ -90,7 +124,13 @@ function submitq5(){
     q3.style.display = "none";
     q4.style.display = "none";
     q5.style.display = "none";
-    fini.style.display ="block"; 
+    fini.style.display ="none"; 
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+
+    greetingInput.style.display = "block";
 
     totalScore = totalScore + q1Score + q2Score + q3Score + q4Score + q5Score;
     
@@ -104,9 +144,7 @@ if (averageScore < 1.5){
     message = 'Arts';
 } else if(averageScore < 4.5){
     message = 'Service';
-} else {
-message = 'You missed at least one question';
-}
+} 
 }
 
 function returnq5(){
@@ -116,6 +154,11 @@ q3.style.display = "none";
 q4.style.display = "block";
 q5.style.display = "none";
 fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
 
 function returnfini() {
@@ -125,7 +168,62 @@ q3.style.display = "none";
 q4.style.display = "none";
 q5.style.display = "block";
 fini.style.display ="none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
 }
+
+function greeting() {
+headerText.innerHTML = ""
+headerText.innerHTML = userName.value + ", you should try " + (message) + "!";
+greetingInput.style.display = "block";
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="block";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+
+
+function info() {
+greetingInput.style.display = "none";
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+
+
+if (message = 'Sports'){
+arts.style.display = "none";
+sports.style.display = "block";
+    music.style.display = "none";
+    service.style.display = "none";
+} else if (message = 'Music'){
+    arts.style.display = "none";
+    sports.style.display = "none";
+    music.style.display = "block";
+    service.style.display = "none";
+} else if (message = 'Arts') {
+    arts.style.display = "block";
+    sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+} else {
+    service.style.display = "block";
+    arts.style.display = "none";
+    sports.style.display = "none";
+    music.style.display = "none";
+} }
+
 
 let totalScore = 0
 
@@ -303,7 +401,3 @@ function q5a4Function() {
     q5Score = 4
 }
 
-
-function qFinish() {
-    alert(message);
-}
