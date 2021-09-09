@@ -1,4 +1,5 @@
 var userName = document.querySelector("#userName");
+let startbt = document.querySelector('#startbutton');
 let headerText = document.querySelector("#headerText");
 let greetingInput = document.querySelector("#greetingInput");
 let q1 = document.querySelector("#question1");
@@ -13,7 +14,8 @@ let sports = document.querySelector("#Sportsinfo");
 let music = document.querySelector("#Musicinfo");
 let service = document.querySelector("#Serviceinfo");
 
-q1.style.display = "block";
+startbt.style.display = "block"
+q1.style.display = "none";
 q2.style.display = "none";
 q3.style.display = "none";
 q4.style.display = "none";
@@ -25,8 +27,23 @@ sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
 
+function start() {
+    startbt.style.display = "none"
+    q1.style.display = "block";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="none";
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+    sports.style.display = "none";
+        music.style.display = "none";
+        service.style.display = "none";
+}
 
 function submitq1() {
+    startbt.style.display = "none"
     q1.style.display = "none";
     q2.style.display = "block"
     greetingInput.style.display = "none";
@@ -41,6 +58,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 function submitq2(){
+    startbt.style.display = "none"
     q1.style.display = "none";
     q2.style.display = "none";
     q3.style.display = "block";
@@ -54,6 +72,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 function returnq2(){
+    startbt.style.display = "none"
 q1.style.display = "block";
 q2.style.display = "none"
 q3.style.display = "none";
@@ -67,6 +86,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 function submitq3(){
+    startbt.style.display = "none"
     q1.style.display = "none";
     q2.style.display = "none";
     q3.style.display = "none";
@@ -80,6 +100,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 function returnq3(){
+    startbt.style.display = "none"
 q1.style.display = "none";
 q2.style.display = "block"
 q3.style.display = "none";
@@ -93,6 +114,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 function submitq4(){
+    startbt.style.display = "none"
     q1.style.display = "none";
     q2.style.display = "none";
     q3.style.display = "none";
@@ -106,6 +128,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 function returnq4(){
+    startbt.style.display = "none"
 q1.style.display = "none";
 q2.style.display = "none"
 q3.style.display = "block";
@@ -119,6 +142,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 function submitq5(){
+    startbt.style.display = "none"
     q1.style.display = "none";
     q2.style.display = "none";
     q3.style.display = "none";
@@ -148,6 +172,7 @@ if (averageScore < 1.5){
 }
 
 function returnq5(){
+    startbt.style.display = "none"
 q1.style.display = "none";
 q2.style.display = "none"
 q3.style.display = "none";
@@ -162,6 +187,7 @@ sports.style.display = "none";
 }
 
 function returnfini() {
+    startbt.style.display = "none"
 q1.style.display = "none";
 q2.style.display = "none"
 q3.style.display = "none";
@@ -188,12 +214,14 @@ arts.style.display = "none";
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    startbt.style.display = "none"
 }
 
 
 
 function info() {
 greetingInput.style.display = "none";
+startbt.style.display = "none"
 q1.style.display = "none";
 q2.style.display = "none"
 q3.style.display = "none";
