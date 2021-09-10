@@ -41,6 +41,7 @@ function q1a4Function() {
     q1Score = 4
 }
 
+//repeat for question 2
 let q2a1 = document.querySelector("#question2answer1");
 let q2a2 = document.querySelector("#question2answer2");
 let q2a3 = document.querySelector("#question2answer3");
@@ -76,6 +77,7 @@ function q2a4Function() {
     q2Score = 4
 }
 
+//repeat for question 3
 let q3a1 = document.querySelector("#question3answer1");
 let q3a2 = document.querySelector("#question3answer2");
 let q3a3 = document.querySelector("#question3answer3");
@@ -111,6 +113,7 @@ function q3a4Function() {
     q3Score = 4
 }
 
+//repeat for question 4
 let q4a1 = document.querySelector("#question4answer1");
 let q4a2 = document.querySelector("#question4answer2");
 let q4a3 = document.querySelector("#question4answer3");
@@ -145,6 +148,7 @@ function q4a4Function() {
     q4a4.style.background = "rgb(145, 111, 27)";
     q4Score = 4
 }
+//repeat for question 4
 let q5a1 = document.querySelector("#question5answer1");
 let q5a2 = document.querySelector("#question5answer2");
 let q5a3 = document.querySelector("#question5answer3");
@@ -399,7 +403,7 @@ sports.style.display = "none";
     service.style.display = "none";
 }
 
-//this page shows stored sername variable and a message depending on their average score
+//this page shows stored username variable and a message depending on their average score
 function greeting() {
 headerText.innerHTML = ""
 headerText.innerHTML = userName.value + ", you should try " + (message) + "!";
