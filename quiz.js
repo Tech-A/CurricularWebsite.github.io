@@ -1,266 +1,17 @@
-var userName = document.querySelector("#userName");
-let startbt = document.querySelector('#startbutton');
-let headerText = document.querySelector("#headerText");
-let greetingInput = document.querySelector("#greetingInput");
-let q1 = document.querySelector("#question1");
-let q2 = document.querySelector("#question2");
-let q3 = document.querySelector("#question3");
-let q4 = document.querySelector("#question4");
-let q5 = document.querySelector("#question5");
-let fini = document.querySelector("#moreinfo");
-
-let arts = document.querySelector("#Artsinfo");
-let sports = document.querySelector("#Sportsinfo");
-let music = document.querySelector("#Musicinfo");
-let service = document.querySelector("#Serviceinfo");
-
-startbt.style.display = "block"
-q1.style.display = "none";
-q2.style.display = "none";
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-
-function start() {
-    startbt.style.display = "none"
-    q1.style.display = "block";
-    q2.style.display = "none";
-    q3.style.display = "none";
-    q4.style.display = "none";
-    q5.style.display = "none";
-    fini.style.display ="none";
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-    sports.style.display = "none";
-        music.style.display = "none";
-        service.style.display = "none";
-}
-
-function submitq1() {
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "block"
-    greetingInput.style.display = "none";
-    q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-function submitq2(){
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "none";
-    q3.style.display = "block";
-    q4.style.display = "none";
-    q5.style.display = "none";
-    fini.style.display ="none"; 
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-function returnq2(){
-    startbt.style.display = "none"
-q1.style.display = "block";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-function submitq3(){
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "none";
-    q3.style.display = "none";
-    q4.style.display = "block";
-    q5.style.display = "none";
-    fini.style.display ="none"; 
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-function returnq3(){
-    startbt.style.display = "none"
-q1.style.display = "none";
-q2.style.display = "block"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-function submitq4(){
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "none";
-    q3.style.display = "none";
-    q4.style.display = "none";
-    q5.style.display = "block";
-    fini.style.display ="none"; 
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-function returnq4(){
-    startbt.style.display = "none"
-q1.style.display = "none";
-q2.style.display = "none"
-q3.style.display = "block";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-function submitq5(){
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "none";
-    q3.style.display = "none";
-    q4.style.display = "none";
-    q5.style.display = "none";
-    fini.style.display ="none"; 
-    arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-
-    greetingInput.style.display = "block";
-
-    totalScore = totalScore + q1Score + q2Score + q3Score + q4Score + q5Score;
-    
-    let averageScore = totalScore/5;
-
-if (averageScore < 1.5){
-    message = 'Sports';
-} else if (averageScore < 2.5){
-    message = 'Music';
-} else if(averageScore < 3.5){
-    message = 'Arts';
-} else if(averageScore < 4.5){
-    message = 'Service';
-} 
-}
-
-function returnq5(){
-    startbt.style.display = "none"
-q1.style.display = "none";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "block";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-
-function returnfini() {
-    startbt.style.display = "none"
-q1.style.display = "none";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "block";
-fini.style.display ="none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-
-function greeting() {
-headerText.innerHTML = ""
-headerText.innerHTML = userName.value + ", you should try " + (message) + "!";
-greetingInput.style.display = "block";
-q1.style.display = "none";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="block";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-    startbt.style.display = "none"
-}
-
-
-
-function info() {
-greetingInput.style.display = "none";
-startbt.style.display = "none"
-q1.style.display = "none";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-
-
-if (message = 'Sports'){
-arts.style.display = "none";
-sports.style.display = "block";
-    music.style.display = "none";
-    service.style.display = "none";
-} else if (message = 'Music'){
-    arts.style.display = "none";
-    sports.style.display = "none";
-    music.style.display = "block";
-    service.style.display = "none";
-} else if (message = 'Arts') {
-    arts.style.display = "block";
-    sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-} else {
-    service.style.display = "block";
-    arts.style.display = "none";
-    sports.style.display = "none";
-    music.style.display = "none";
-} }
-
-
+//set totalScore to 0 by default
 let totalScore = 0
 
+//establish answer variables of question 1
 let q1a1 = document.querySelector("#question1answer1");
 let q1a2 = document.querySelector("#question1answer2");
 let q1a3 = document.querySelector("#question1answer3");
 let q1a4 = document.querySelector("#question1answer4");
+//set question 1 score to 0 
 let q1Score = 0
 
+//change color of button on click of different answers of questions
+//answers add certain numbers to question score 
+//answer 1= +1   answer 2= +2  answer 3= +3  answer 4= +4
 function q1a1Function() {
     q1a1.style.background = "rgb(145, 111, 27)";
     q1a2.style.background = "lightslategray";
@@ -428,4 +179,278 @@ function q5a4Function() {
     q5a4.style.background = "rgb(145, 111, 27)";
     q5Score = 4
 }
+
+//establish variables used in the document
+var userName = document.querySelector("#userName");
+
+let startbt = document.querySelector('#startbutton');
+let headerText = document.querySelector("#headerText");
+let greetingInput = document.querySelector("#greetingInput");
+
+let q1 = document.querySelector("#question1");
+let q2 = document.querySelector("#question2");
+let q3 = document.querySelector("#question3");
+let q4 = document.querySelector("#question4");
+let q5 = document.querySelector("#question5");
+
+let fini = document.querySelector("#moreinfo");
+let arts = document.querySelector("#Artsinfo");
+let sports = document.querySelector("#Sportsinfo");
+let music = document.querySelector("#Musicinfo");
+let service = document.querySelector("#Serviceinfo");
+
+
+//what will be displayed on the initial page (on first click)
+startbt.style.display = "block"
+q1.style.display = "none";
+q2.style.display = "none";
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+
+//when the start button is clicked, page should hide start button and display question 1
+function start() {
+    startbt.style.display = "none"
+    q1.style.display = "block";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="none";
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+    sports.style.display = "none";
+        music.style.display = "none";
+        service.style.display = "none";
+}
+//next button of question 1 goes to question 2
+function submitq1() {
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "block"
+    greetingInput.style.display = "none";
+    q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+//next button of question 2 goes to question 3
+function submitq2(){
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "block";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//previous button of question 2 returns to question 1
+function returnq2(){
+    startbt.style.display = "none"
+q1.style.display = "block";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//next button of question 3 goes to question 4
+function submitq3(){
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "block";
+    q5.style.display = "none";
+    fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//previous button of question 3 returns to question 2
+function returnq3(){
+    startbt.style.display = "none"
+q1.style.display = "none";
+q2.style.display = "block"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+//next button of question 4 goes to question 5
+function submitq4(){
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "block";
+    fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//previous button of question 4 returns to question 3
+function returnq4(){
+    startbt.style.display = "none"
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "block";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//when user clicks next button after question 5, page will display input block 
+//input block allows users to input their name - this will be stored as Username variable
+function submitq5(){
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="none"; 
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+
+    greetingInput.style.display = "block";
+//All scores are totaled to get total score (stored in total score variable)
+    totalScore = totalScore + q1Score + q2Score + q3Score + q4Score + q5Score;
+//total score is divided by the no. of questions which is 5 to get average score    
+    let averageScore = totalScore/5;
+
+    //show different messages depending on average score
+if (averageScore < 1.5){
+    message = 'Sports';
+} else if (averageScore < 2.5){
+    message = 'Music';
+} else if(averageScore < 3.5){
+    message = 'Arts';
+} else if(averageScore < 4.5){
+    message = 'Service';
+} 
+}
+//previous button of question 5 returns to question 4
+function returnq5(){
+    startbt.style.display = "none"
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "block";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//previous button of name input returns to question 5
+function returnfini() {
+    startbt.style.display = "none"
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "block";
+fini.style.display ="none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+//this page shows stored sername variable and a message depending on their average score
+function greeting() {
+headerText.innerHTML = ""
+headerText.innerHTML = userName.value + ", you should try " + (message) + "!";
+greetingInput.style.display = "block";
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="block";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+    startbt.style.display = "none"
+}
+
+//more info button should show certain info corresponding to the user's message result
+function info() {
+greetingInput.style.display = "none";
+startbt.style.display = "none"
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+
+
+if (message = 'Sports'){
+arts.style.display = "none";
+sports.style.display = "block";
+    music.style.display = "none";
+    service.style.display = "none";
+} else if (message = 'Music'){
+    arts.style.display = "none";
+    sports.style.display = "none";
+    music.style.display = "block";
+    service.style.display = "none";
+} else if (message = 'Arts') {
+    arts.style.display = "block";
+    sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+} else {
+    service.style.display = "block";
+    arts.style.display = "none";
+    sports.style.display = "none";
+    music.style.display = "none";
+} }
+
+
+
 
