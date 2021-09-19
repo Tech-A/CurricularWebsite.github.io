@@ -39,14 +39,136 @@
   <img src="https://www.lifeline24.co.uk/wp-content/uploads/2020/01/Piano-musical-instruments-for-adults-to-learn-e1590068316519-990x450.jpg" alt="music" style="width:1425px; height:500px;">
   <div class="content">
     <h1>Music</h1>
-    <p>Marist College offers group and individual (seniors only) music lessons taught by highly trained teachers and professional musicians. Students can also join school musical groups and particpate in school concerts or competitions.</p>
+    
   </div>
 </div>
+<hr>
+<br>
+<br>
+<div class="text">
+<h2>What is it?</h2>
+<p>Marist College offers group and individual (seniors only) music lessons taught by highly trained teachers and professional musicians. Students can also join school musical groups and particpate in school concerts or competitions.</p>
+<br><br>
+<hr>
+<br>
+<h2>Benefits</h2>
+<p>The benefits of taking a music extracurricular is the skills and knowledge you learn from it.</p>
+</div>  
 
 
+<br>
+<br>
+<hr>
+<br>
+<h2>Extracurriculars under music</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Maybelles')" id="defaultOpen">Maybelles</button>
+  <button class="tablinks" onclick="openCity(event, 'Itmusic')">Itinerant music</button>
+  <button class="tablinks" onclick="openCity(event, 'The Arts')">Marist School Orchestra</button>
+  <button class="tablinks" onclick="openCity(event, 'Service')">Marist Jazz band</button>
+</div>
+
+<div id="Maybelles" class="tabcontent">
+  <h2>Maybelles</h2>
+  <p>Maybelles is the Marist College choir. Open to both juniors and seniors, if you enjoy singing, join the Maybelles! Open audition</p>
+  <h3>Requirements</h3>
+  <ul>
+    <li>A love for singing</li>
+    <li>Audition</li>
+    <li>Clean uniform</li>
+  </ul>
+  <br>
+  <br>
+</div>
+
+<div id="Itmusic" class="tabcontent">
+  <h2>Itinerant music</h2>
+  <p>Marist College allows students to learn instruments in private lessons. Paid seperately.</p>
+  <h3>Options</h3>
+  <ul>
+    <li>Flute</li>
+      <li>Clarinet</li>
+      <li>Saxophone</li>
+      <li>Violin</li>
+      <li>Violincello</li>
+      <li>Guitar</li>
+      <li>Voice</li>
+      <li>Drums</li>
+  </ul>
+
+  <h3>Requirements</h3>
+  <ul>
+    <li>An instrument of your choice (Some instruments (ie. drums) are able to be borrowed from Marist College in school hours)</li>
+  </ul>
+  <br>
+  <br>
+</div>
+
+<div id="The Arts" class="tabcontent">
+  <a href="Artspage.html"><h2>The Arts</h2></a>
+<p>Express your creativity and inner self.</p>
+  <h3>Performing arts</h3>
+  <ul>
+    <li>Musicals</li>
+    <li>Drama club</li>
+  </ul>
+  <h3>Visual arts</h3>
+  <ul>
+    <li>Drawing club</li>
+    <li>Craft club</li>
+  </ul>
+  <br>
+  <button class="block">Vist page</button>
+</div>
+
+<div id="Service" class="tabcontent">
+  <a href="Service.html"><h2>Service</h2></a>
+  <p>Give back to your community.</p>
+  <ul>
+    <li>Junior Vinnies</li>
+    <li>Senior Vinnies</li>
+    <li>Resthome club?</li>
+    <li>Relay for life</li>
+    <li>Environmental club</li>
+  </ul>
+  <br>
+  <button class="block">Vist page</button>
+</div>  
+<br>
+<br>
+<br>
+<hr>
+<h2>For more information</h2>
+<p>Contact the music teachers</p>
+<br>
+<ul style="text-align: center;">Charlotte Nicklin - C.Nicklin@maristcollege.school.nz</ul>
+<ul style="text-align: center;">Charlotte Nicklin - C.Nicklin@maristcollege.school.nz</ul>
+<ul style="text-align: center;">Charlotte Nicklin - C.Nicklin@maristcollege.school.nz</ul>
+<br>
+<br>
+
+<hr>
 
 
-          </body>
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+  </script>
+     
+
+</body>
 
           <style>
 body {
@@ -66,14 +188,23 @@ body, html {
 h2 {
   color:white;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 p {
   text-align: center;
   letter-spacing: 2px;
+  font-size: 20px;
   color: white;
+  font-family:serif;
 }
-   /* navbar */
+li, h3, ul {
+  color:white;
+  font-family:serif;
+  letter-spacing: 1px;
+}
+
+/* navbar */
    .navbar {
 background-color: #5f5072;
 overflow: hidden;
@@ -159,6 +290,62 @@ margin:auto;}
   width: 1385px;
   padding: 20px;
 }
+/* tabs */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgb(127, 155, 127);
+  width: 90%;
+  margin: auto;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width:88%;
+  background-color: rgb(51, 73, 68);
+  margin:auto;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color:rgb(85, 81, 81);
+  color:white;
+  transition-duration: 0.4s;
+}
+
           </style>
 
 
