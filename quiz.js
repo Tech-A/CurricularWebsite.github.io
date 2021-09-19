@@ -433,17 +433,17 @@ q5.style.display = "none";
 fini.style.display ="none";
 
 
-if (message = 'Sports'){
+if (message === 'Sports'){
 arts.style.display = "none";
 sports.style.display = "block";
     music.style.display = "none";
     service.style.display = "none";
-} else if (message = 'Music'){
+} else if (message === 'Music'){
     arts.style.display = "none";
     sports.style.display = "none";
     music.style.display = "block";
     service.style.display = "none";
-} else if (message = 'Arts') {
+} else if (message === 'Arts') {
     arts.style.display = "block";
     sports.style.display = "none";
     music.style.display = "none";
@@ -453,7 +453,7 @@ sports.style.display = "block";
     arts.style.display = "none";
     sports.style.display = "none";
     music.style.display = "none";
-} }
+} };
 
 
 

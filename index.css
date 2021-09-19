@@ -48,6 +48,13 @@
     font-size: 75px;
     font-family: 'Times New Roman', Times, serif;
    }
+   h3 {
+    text-align: center;
+    letter-spacing: 2px;
+    color:white;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
   
  .w3-serif {
    font-size: 20px;
