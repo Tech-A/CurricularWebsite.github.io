@@ -57,9 +57,7 @@
                 <h2>Sports</h2></a>
                 <p>Get active and get fit.</p>
                 
-                <br>
-                <button class="block">Vist page</button>
-  
+              
                </div>
                
                <button class="accordion">Section 2</button>
@@ -111,6 +109,7 @@
                     <dt>Futsal</dt>
                     <dt>Touch Rugby</dt>
                   </dl>
+                  <button class="block"><a href="Sportspage.html">Visit page</a></button>
                 </div>
               </div>
             </div>
@@ -121,12 +120,26 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="img_avatar.png" alt="sports" style="width:300px;height:300px;">
+                <img src="img_avatar.png" alt="music" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1>Sports</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
+                <h1 class="card-h1">Music</h1> 
+                  <dl>
+                    <h3>Itinerant music</h3>
+                    <dt>Flute</dt>
+                    <dt>Clarinet</dt>
+                    <dt>Saxophone</dt>
+                    <dt>Violin</dt>
+                    <dt>Violincello</dt>
+                    <dt>Guitar</dt>
+                    <dt>Voice</dt>
+                    <dt>Drums</dt>
+                    <h3>School groups</h3>
+                    <dt>Marybelles</dt>
+                    <dt>Marist Jazz band</dt>
+                    <dt>Marist School Orchestra</dt>
+                  </dl>
+                  <button class="block"><a href="Musicpage.html">Visit page</a></button>
               </div>
             </div>
           </div>
@@ -137,11 +150,26 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                <img src="img_avatar.png" alt="arts" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1 class= "card-h1">John Doe</h1> 
-                
+                <h1 class= "card-h1">Arts</h1> 
+                 <dl>
+                  <h3>Performing arts</h3>
+                    <dt>Musicals</dt>
+                    <dt>Drama club</dt>
+                  <h3>Visual arts</h3>
+                    <dt>Drawing club</dt>
+                    <dt>Craft club</dt>
+                 </dl>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <button class="block"><a href="Artspage.html">Vist page</a></button>
               </div>
             </div>
           </div>
@@ -151,12 +179,29 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                <img src="img_avatar.png" alt="service" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
+                <h1 class= "card-h1">Service</h1> 
+                <dl>
+                  <dt>Junior Vinnies</dt>
+                  <dt>Senior Vinnies</dt>
+                  <dt>Resthome club</dt>
+                  <dt>Relay for life</dt>
+                  <dt>Environmental club</dt>
+                </dl>
+                <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                <button class="block"><a href="Service.html">Vist page</a></button>
               </div>
             </div>
           </div>
@@ -231,7 +276,9 @@ h2 {
 a:hover {
   color:rgb(168, 155, 82);
 }
-
+h3 {
+  letter-spacing: 1px;
+}
 
 p {
   text-align: center;
@@ -245,10 +292,14 @@ li {
   color: white;
   margin-left: 10px;
 }
-a {color:white;
-  font-size: 50px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;}
+a {
+  color: black;
+  letter-spacing: 1px;
+}
+dt {
+  letter-spacing: 2px;
+  padding: 1px;
+}
 
     /* navbar */
 .navbar {
@@ -378,7 +429,7 @@ color: white;
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 400px;
+  height: 512px;
   perspective: 1000px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -416,7 +467,26 @@ color: white;
   transform: rotateY(180deg);
 }
 .card-h1 
-{font-size: 35px;}
+{
+  font-size: 60px;
+}
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color:rgb(85, 81, 81);
+  color:white;
+  transition-duration: 0.4s;
+}
+
 
 </style>
 
