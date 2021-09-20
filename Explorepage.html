@@ -40,136 +40,142 @@
           <div class="hero-image">
             <div class="hero-text">
               <h1>Explore Extracurriculars</h1>
-              <p style= "font-size: 25px;">At Marist College</p>
+              <p style= "font-size: 25px;">Want to try an extracurricular?</p>
             </div>
           
 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
-           <hr>
-            <br>
-<h2 style="text-align: center; color: white;">Search for extracurriculars by category!</h2>
+   
+
 
             <br>
-            <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'Sport')" id="defaultOpen">Sport</button>
-              <button class="tablinks" onclick="openCity(event, 'Music')">Music</button>
-              <button class="tablinks" onclick="openCity(event, 'The Arts')">The Arts</button>
-              <button class="tablinks" onclick="openCity(event, 'Service')">Service</button>
-            </div>
-            
-            <div id="Sport" class="tabcontent">
-              <a href="Sportspage.html"><h2>Sports</h2></a>
-              <p>Get active and get fit.</p>
-              <ul>
-                <li>Volleyball</li>
-                <li>Basketball</li>
-                <li>Badminton</li>
-                <li>Cricket</li>
-                <li>Football</li>
-                <li>Hockey</li>
-                <li>Netball</li>
-                <li>Lacrosse</li>
-                <li>Rugby</li>
-                <li>Squash</li>
-                <li>Water Polo</li>
-                <li>Waka Ama</li>
-                <li>Tennis</li>
-                <li>Futsal</li>
-                <li>Touch Rugby</li>
-              </ul>
-              <br>
-              <button class="block">Vist page</button>
-            </div>
-            
-            <div id="Music" class="tabcontent">
-              <a href="Musicpage.html"><h2>Music</h2></a>
-              <p>Grow your skills.</p>
-              <h3>Itinerant music</h3>
-              <ul>
-                <li>Flute</li>
-                  <li>Clarinet</li>
-                  <li>Saxophone</li>
-                  <li>Violin</li>
-                  <li>Violincello</li>
-                  <li>Guitar</li>
-                  <li>Voice</li>
-                  <li>Drums</li>
-              </ul>
-
-              <h3>School groups</h3>
-              <ul>
-                <li>Marybelles</li>
-                  <li>Marist Stella Choir</li>
-                  <li>Marist School orchestra</li>
-                  <li>Marist Jazz band</li>
-              </ul>
-              <br>
-              <button class="block">Vist page</button>
-            </div>
-            
-            <div id="The Arts" class="tabcontent">
-              <a href="Artspage.html"><h2>The Arts</h2></a>
-          <p>Express your creativity and inner self.</p>
-              <h3>Performing arts</h3>
-              <ul>
-                <li>Musicals</li>
-                <li>Drama club</li>
-              </ul>
-              <h3>Visual arts</h3>
-              <ul>
-                <li>Drawing club</li>
-                <li>Craft club</li>
-              </ul>
-              <br>
-              <button class="block">Vist page</button>
-            </div>
-            
-            <div id="Service" class="tabcontent">
-              <a href="Service.html"><h2>Service</h2></a>
-              <p>Give back to your community.</p>
-              <ul>
-                <li>Junior Vinnies</li>
-                <li>Senior Vinnies</li>
-                <li>Resthome club?</li>
-                <li>Relay for life</li>
-                <li>Environmental club</li>
-              </ul>
-              <br>
-              <button class="block">Vist page</button>
+            <div class = "tab">
+               <button class="accordion">Sport</button>
+               <div class="panel">
+                <h2>Sports</h2></a>
+                <p>Get active and get fit.</p>
+                <ul>
+                  <li>Volleyball</li>
+                  <li>Basketball</li>
+                  <li>Badminton</li>
+                  <li>Cricket</li>
+                  <li>Football</li>
+                  <li>Hockey</li>
+                  <li>Netball</li>
+                  <li>Lacrosse</li>
+                  <li>Rugby</li>
+                  <li>Squash</li>
+                  <li>Water Polo</li>
+                  <li>Waka Ama</li>
+                  <li>Tennis</li>
+                  <li>Futsal</li>
+                  <li>Touch Rugby</li>
+                </ul>
+                <br>
+                <button class="block">Vist page</button>
+  
+               </div>
+               
+               <button class="accordion">Section 2</button>
+               <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               </div>
+               
+               <button class="accordion">Section 3</button>
+               <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               </div>
             </div>  
             
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
-            <script>
-            function openCity(evt, cityName) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-              document.getElementById(cityName).style.display = "block";
-              evt.currentTarget.className += " active";
-            }
-            document.getElementById("defaultOpen").click();
-            </script>
+<h2 style="text-align: left; margin-left: 50px; color: white;">Extracurriculars by category</h2>
+           
+              <div class="row">
+
+          <div class="column">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>John Doe</h1> 
+                  <p>Architect & Engineer</p> 
+                  <p>We love that guy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+               <script>
+               var acc = document.getElementsByClassName("accordion");
+               var i;
                
-          
+               for (i = 0; i < acc.length; i++) {
+                 acc[i].addEventListener("click", function() {
+                   this.classList.toggle("active");
+                   var panel = this.nextElementSibling;
+                   if (panel.style.display === "block") {
+                     panel.style.display = "none";
+                   } else {
+                     panel.style.display = "block";
+                   }
+                 });
+               }
+               </script>
       
 
 
@@ -177,13 +183,32 @@
 
           <style>
   /* body */
+html {
+  box-sizing: border-box;
+}
+  *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 100px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
 body {
     background-color:lightslategray;
 }
 
-body, html {
-    height: 100%;
-    }
     
     h1 {
   text-align: center;
@@ -192,7 +217,7 @@ body, html {
   font-family: 'Times New Roman', Times, serif;
 }
 h2 {
-  color:black;
+  color:white;
   font-size: 50px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -200,20 +225,18 @@ h2 {
 a:hover {
   color:rgb(168, 155, 82);
 }
-h2:hover{
-  color:rgb(168, 155, 82);
-}
+
 
 p {
   text-align: center;
   letter-spacing: 2px;
   color: white;
 }
-u {
+u, li {
   color:white;
 }
-li {color: black;}
-a {color:black;
+
+a {color:white;
   font-size: 50px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;}
@@ -287,7 +310,7 @@ right: 35px;
 /* hero image */
 .hero-image {
 background-image: linear-gradient(rgba(114, 107, 107, 0.5), rgba(121, 114, 114, 0.5)), url("https://www.nzherald.co.nz/resizer/MqkqnKxGQwTnjlycgAQ0Lfq7KWI=/576x384/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/E47VQJF3LSBYH4PQUUQ5QTDWGQ.jpg");
-height: 60%;
+height: 500px;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -303,81 +326,86 @@ transform: translate(-50%, -50%);
 color: white;
       }
 
+/* accordian */
 
-      /* columns */ 
-      * {
-  box-sizing: border-box;
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
+.active, .accordion:hover {
+  background-color: #ccc; 
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  height:50%;
-}
-
-/* tabs */
-.tab {
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: lightslategray;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 1250px;
   margin: auto;
 }
 
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
 }
 
-.tab button:hover {
-  background-color: #ddd;
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-.tab button.active {
-  background-color: #ccc;
+/*flipcard*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  width:1250px;
-  background-color: #ccc;
-  margin:auto;
-}
-
-.block {
-  display: block;
+.flip-card-inner {
+  position: relative;
   width: 100%;
-  border: none;
-  background-color: #ffffff;
-  color: black;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
+  height: 100%;
   text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.block:hover {
-  background-color:rgb(85, 81, 81);
-  color:white;
-  transition-duration: 0.4s;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 </style>
 
