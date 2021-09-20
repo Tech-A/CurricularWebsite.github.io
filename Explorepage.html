@@ -51,27 +51,12 @@
 
             <br>
             <div class = "tab">
+              
                <button class="accordion">Sport</button>
                <div class="panel">
                 <h2>Sports</h2></a>
                 <p>Get active and get fit.</p>
-                <ul>
-                  <li>Volleyball</li>
-                  <li>Basketball</li>
-                  <li>Badminton</li>
-                  <li>Cricket</li>
-                  <li>Football</li>
-                  <li>Hockey</li>
-                  <li>Netball</li>
-                  <li>Lacrosse</li>
-                  <li>Rugby</li>
-                  <li>Squash</li>
-                  <li>Water Polo</li>
-                  <li>Waka Ama</li>
-                  <li>Tennis</li>
-                  <li>Futsal</li>
-                  <li>Touch Rugby</li>
-                </ul>
+                
                 <br>
                 <button class="block">Vist page</button>
   
@@ -86,10 +71,15 @@
                <div class="panel">
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                </div>
+               <button class="accordion">Section 3</button>
+               <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               </div>
             </div>  
             
-            <br>
-            <br>
+            
+        
+    
             <br>
 
 <h2 style="text-align: left; margin-left: 50px; color: white;">Extracurriculars by category</h2>
@@ -100,12 +90,27 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                  <img src="img_avatar.png" alt="sports" style="width:300px;height:300px;">
                 </div>
                 <div class="flip-card-back">
-                  <h1>John Doe</h1> 
-                  <p>Architect & Engineer</p> 
-                  <p>We love that guy</p>
+                  <h1 class="card-h1">Sports</h1> 
+                  <dl>
+                    <dt>Volleyball</dt>
+                    <dt>Basketball</dt>
+                    <dt>Badminton</dt>
+                    <dt>Cricket</dt>
+                    <dt>Football</dt>
+                    <dt>Hockey</dt>
+                    <dt>Netball</dt>
+                    <dt>Lacrosse</dt>
+                    <dt>Rugby</dt>
+                    <dt>Squash</dt>
+                    <dt>Water Polo</dt>
+                    <dt>Waka Ama</dt>
+                    <dt>Tennis</dt>
+                    <dt>Futsal</dt>
+                    <dt>Touch Rugby</dt>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -116,10 +121,10 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                <img src="img_avatar.png" alt="sports" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1>John Doe</h1> 
+                <h1>Sports</h1> 
                 <p>Architect & Engineer</p> 
                 <p>We love that guy</p>
               </div>
@@ -135,9 +140,8 @@
                 <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
+                <h1 class= "card-h1">John Doe</h1> 
+                
               </div>
             </div>
           </div>
@@ -189,7 +193,9 @@ html {
   *, *:before, *:after {
   box-sizing: inherit;
 }
-
+.row {
+  margin-left: 25px;
+}
 .column {
   float: left;
   width: 25%;
@@ -232,10 +238,13 @@ p {
   letter-spacing: 2px;
   color: white;
 }
-u, li {
+u  {
   color:white;
 }
-
+li {
+  color: white;
+  margin-left: 10px;
+}
 a {color:white;
   font-size: 50px;
   text-align: center;
@@ -369,7 +378,7 @@ color: white;
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 400px;
   perspective: 1000px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -402,10 +411,12 @@ color: white;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: rgb(168, 155, 82);
   color: white;
   transform: rotateY(180deg);
 }
+.card-h1 
+{font-size: 35px;}
 
 </style>
 
