@@ -458,7 +458,7 @@ sports.style.display = "none";
 
 
 
-
+//INFORMATION page
 //more info button should show certain info corresponding to the user's message result
 function info() {
 greetingInput.style.display = "none";
