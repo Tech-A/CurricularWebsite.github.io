@@ -1,13 +1,73 @@
 //set totalScore to 0 by default
 let totalScore = 0
+//establish variables used in the document
+var userName = document.querySelector("#userName");
 
-//establish answer variables of question 1
+//start
+let startbt = document.querySelector('#startbutton');
+let headerText = document.querySelector("#headerText");
+let greetingInput = document.querySelector("#greetingInput");
+
+//questions
+let q1 = document.querySelector("#question1");
+let q2 = document.querySelector("#question2");
+let q3 = document.querySelector("#question3");
+let q4 = document.querySelector("#question4");
+let q5 = document.querySelector("#question5");
+
+//information
+let fini = document.querySelector("#moreinfo");
+let arts = document.querySelector("#Artsinfo");
+let sports = document.querySelector("#Sportsinfo");
+let music = document.querySelector("#Musicinfo");
+let service = document.querySelector("#Serviceinfo");
+
+
+
+//what will be displayed on the initial page (on first click)
+startbt.style.display = "block"
+q1.style.display = "none";
+q2.style.display = "none";
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+
+//when the start button is clicked, page should hide start button and display question 1
+function start() {
+    startbt.style.display = "none"
+    q1.style.display = "block";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="none";
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+    sports.style.display = "none";
+        music.style.display = "none";
+        service.style.display = "none";
+}
+
+
+
+
+//QUESTION 1
+
+//answer variables of question 1
 let q1a1 = document.querySelector("#question1answer1");
 let q1a2 = document.querySelector("#question1answer2");
 let q1a3 = document.querySelector("#question1answer3");
 let q1a4 = document.querySelector("#question1answer4");
+
 //set question 1 score to 0 
 let q1Score = 0
+
 
 //change color of button on click of different answers of questions
 //answers add certain numbers to question score 
@@ -41,7 +101,27 @@ function q1a4Function() {
     q1Score = 4
 }
 
-//repeat for question 2
+//next button of question 1 goes to question 2
+function submitq1() {
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "block"
+    greetingInput.style.display = "none";
+    q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+
+
+
+//QUESTION 2
 let q2a1 = document.querySelector("#question2answer1");
 let q2a2 = document.querySelector("#question2answer2");
 let q2a3 = document.querySelector("#question2answer3");
@@ -77,7 +157,41 @@ function q2a4Function() {
     q2Score = 4
 }
 
-//repeat for question 3
+//next button of question 2 goes to question 3
+function submitq2(){
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "block";
+    q4.style.display = "none";
+    q5.style.display = "none";
+    fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//previous button of question 2 returns to question 1
+function returnq2(){
+    startbt.style.display = "none"
+q1.style.display = "block";
+q2.style.display = "none"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+
+
+
+//QUESTION 3
 let q3a1 = document.querySelector("#question3answer1");
 let q3a2 = document.querySelector("#question3answer2");
 let q3a3 = document.querySelector("#question3answer3");
@@ -113,7 +227,43 @@ function q3a4Function() {
     q3Score = 4
 }
 
-//repeat for question 4
+//next button of question 3 goes to question 4
+function submitq3(){
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "block";
+    q5.style.display = "none";
+    fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//previous button of question 3 returns to question 2
+function returnq3(){
+    startbt.style.display = "none"
+q1.style.display = "none";
+q2.style.display = "block"
+q3.style.display = "none";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+
+
+
+//QUESTION 4
+
+//variables
 let q4a1 = document.querySelector("#question4answer1");
 let q4a2 = document.querySelector("#question4answer2");
 let q4a3 = document.querySelector("#question4answer3");
@@ -148,7 +298,41 @@ function q4a4Function() {
     q4a4.style.background = "rgb(145, 111, 27)";
     q4Score = 4
 }
-//repeat for question 4
+
+//next button of question 4 goes to question 5
+function submitq4(){
+    startbt.style.display = "none"
+    q1.style.display = "none";
+    q2.style.display = "none";
+    q3.style.display = "none";
+    q4.style.display = "none";
+    q5.style.display = "block";
+    fini.style.display ="none"; 
+    greetingInput.style.display = "none";
+    arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+//previous button of question 4 returns to question 3
+function returnq4(){
+    startbt.style.display = "none"
+q1.style.display = "none";
+q2.style.display = "none"
+q3.style.display = "block";
+q4.style.display = "none";
+q5.style.display = "none";
+fini.style.display ="none";
+greetingInput.style.display = "none";
+arts.style.display = "none";
+sports.style.display = "none";
+    music.style.display = "none";
+    service.style.display = "none";
+}
+
+
+
+//QUESTION 5
 let q5a1 = document.querySelector("#question5answer1");
 let q5a2 = document.querySelector("#question5answer2");
 let q5a3 = document.querySelector("#question5answer3");
@@ -184,155 +368,14 @@ function q5a4Function() {
     q5Score = 4
 }
 
-//establish variables used in the document
-var userName = document.querySelector("#userName");
 
-let startbt = document.querySelector('#startbutton');
-let headerText = document.querySelector("#headerText");
-let greetingInput = document.querySelector("#greetingInput");
-
-let q1 = document.querySelector("#question1");
-let q2 = document.querySelector("#question2");
-let q3 = document.querySelector("#question3");
-let q4 = document.querySelector("#question4");
-let q5 = document.querySelector("#question5");
-
-let fini = document.querySelector("#moreinfo");
-let arts = document.querySelector("#Artsinfo");
-let sports = document.querySelector("#Sportsinfo");
-let music = document.querySelector("#Musicinfo");
-let service = document.querySelector("#Serviceinfo");
-
-
-//what will be displayed on the initial page (on first click)
-startbt.style.display = "block"
-q1.style.display = "none";
-q2.style.display = "none";
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-
-//when the start button is clicked, page should hide start button and display question 1
-function start() {
-    startbt.style.display = "none"
-    q1.style.display = "block";
-    q2.style.display = "none";
-    q3.style.display = "none";
-    q4.style.display = "none";
-    q5.style.display = "none";
-    fini.style.display ="none";
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-    sports.style.display = "none";
-        music.style.display = "none";
-        service.style.display = "none";
-}
-//next button of question 1 goes to question 2
-function submitq1() {
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "block"
-    greetingInput.style.display = "none";
-    q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-
-//next button of question 2 goes to question 3
-function submitq2(){
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "none";
-    q3.style.display = "block";
-    q4.style.display = "none";
-    q5.style.display = "none";
-    fini.style.display ="none"; 
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-//previous button of question 2 returns to question 1
-function returnq2(){
-    startbt.style.display = "none"
-q1.style.display = "block";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-//next button of question 3 goes to question 4
-function submitq3(){
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "none";
-    q3.style.display = "none";
-    q4.style.display = "block";
-    q5.style.display = "none";
-    fini.style.display ="none"; 
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-//previous button of question 3 returns to question 2
-function returnq3(){
-    startbt.style.display = "none"
-q1.style.display = "none";
-q2.style.display = "block"
-q3.style.display = "none";
-q4.style.display = "none";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-
-//next button of question 4 goes to question 5
-function submitq4(){
-    startbt.style.display = "none"
-    q1.style.display = "none";
-    q2.style.display = "none";
-    q3.style.display = "none";
-    q4.style.display = "none";
-    q5.style.display = "block";
-    fini.style.display ="none"; 
-    greetingInput.style.display = "none";
-    arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-//previous button of question 4 returns to question 3
-function returnq4(){
+//previous button of question 5 returns to question 4
+function returnq5(){
     startbt.style.display = "none"
 q1.style.display = "none";
 q2.style.display = "none"
-q3.style.display = "block";
-q4.style.display = "none";
+q3.style.display = "none";
+q4.style.display = "block";
 q5.style.display = "none";
 fini.style.display ="none";
 greetingInput.style.display = "none";
@@ -341,6 +384,10 @@ sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
 }
+
+
+
+//SUBMIT
 //when user clicks next button after question 5, page will display input block 
 //input block allows users to input their name - this will be stored as Username variable
 function submitq5(){
@@ -373,22 +420,9 @@ if (averageScore < 1.5){
     message = 'Service';
 } 
 }
-//previous button of question 5 returns to question 4
-function returnq5(){
-    startbt.style.display = "none"
-q1.style.display = "none";
-q2.style.display = "none"
-q3.style.display = "none";
-q4.style.display = "block";
-q5.style.display = "none";
-fini.style.display ="none";
-greetingInput.style.display = "none";
-arts.style.display = "none";
-sports.style.display = "none";
-    music.style.display = "none";
-    service.style.display = "none";
-}
-//previous button of name input returns to question 5
+
+
+//previous button of SUBMIT returns to question 5
 function returnfini() {
     startbt.style.display = "none"
 q1.style.display = "none";
@@ -402,6 +436,7 @@ sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
 }
+
 
 //this page shows stored username variable and a message depending on their average score
 function greeting() {
@@ -420,6 +455,9 @@ sports.style.display = "none";
     service.style.display = "none";
     startbt.style.display = "none"
 }
+
+
+
 
 //more info button should show certain info corresponding to the user's message result
 function info() {
