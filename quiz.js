@@ -191,6 +191,7 @@ sports.style.display = "none";
 
 
 
+
 //QUESTION 3
 let q3a1 = document.querySelector("#question3answer1");
 let q3a2 = document.querySelector("#question3answer2");
@@ -333,6 +334,8 @@ sports.style.display = "none";
 
 
 //QUESTION 5
+
+//variables
 let q5a1 = document.querySelector("#question5answer1");
 let q5a2 = document.querySelector("#question5answer2");
 let q5a3 = document.querySelector("#question5answer3");
@@ -388,6 +391,7 @@ sports.style.display = "none";
 
 
 //SUBMIT
+
 //when user clicks next button after question 5, page will display input block 
 //input block allows users to input their name - this will be stored as Username variable
 function submitq5(){
@@ -399,11 +403,12 @@ function submitq5(){
     q5.style.display = "none";
     fini.style.display ="none"; 
     arts.style.display = "none";
-sports.style.display = "none";
+    sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
-
     greetingInput.style.display = "block";
+
+
 //All scores are totaled to get total score (stored in total score variable)
     totalScore = totalScore + q1Score + q2Score + q3Score + q4Score + q5Score;
 //total score is divided by the no. of questions which is 5 to get average score    
@@ -420,7 +425,6 @@ if (averageScore < 1.5){
     message = 'Service';
 } 
 }
-
 
 //previous button of SUBMIT returns to question 5
 function returnfini() {
@@ -456,6 +460,14 @@ sports.style.display = "none";
     startbt.style.display = "none"
 }
 
+
+
+const sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
+
+sportMessageList[0];
+const musicMessageList = ["music quote 1", "music quote 2", "music quote 3"];
+const artsMessageList = ["arts quote 1", "arts quote 2", "arts quote 3"];
+const serviceMessageList = ["service quote 1", "service quote 2", "service quote 3"];
 
 
 //INFORMATION page
