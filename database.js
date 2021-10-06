@@ -21,8 +21,9 @@ const tr = `
          <tr data-id='${doc.id}'>
             <td>${doc.data().firstName}</td>
             <td>${doc.data().lastName}</td>
-            <td>${doc.data().phone}</td>
             <td>${doc.data().email}</td>
+            <td>${doc.data().category}</td>
+            <td>${doc.data().curricular}</td>
             <td>
              <button class="btn btn-edit">Edit</button>
              <button class="btn btn-delete">Delete</button>
@@ -40,8 +41,9 @@ const tr = `
     id = doc.id;
     editModalForm.firstName.value = doc.data().firstName;
     editModalForm.lastName.value = doc.data().lastName;
-    editModalForm.phone.value = doc.data().phone;
     editModalForm.email.value = doc.data().email;
+    editModalForm.category.value = doc.data().category;
+    editModalForm.curricular.value = doc.data().curricular;
     });
 
         //Click delete user
@@ -63,8 +65,9 @@ btnAdd.addEventListener('click', () => {
 
     addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
-    addModalForm.phone.value = '';
     addModalForm.email.value = '';
+    addModalForm.category.value = '';
+    addModalForm.curricular.value = '';
 });
 
 // User click anywhere outside the modal
@@ -111,8 +114,9 @@ addModalForm.addEventListener('submit', e => {
     db.collection('users').add({
         firstName: addModalForm.firstName.value,
         lastName: addModalForm.lastName.value,
-        phone: addModalForm.phone.value,
         email: addModalForm.email.value,
+        category: addModalForm.category.value,
+        curricular: addModalForm.curricular.value,
     });
     modalWrapper.classList.remove('modal-show');
 });
@@ -123,8 +127,9 @@ editModalForm.addEventListener('submit', e => {
  db.collection('users').doc(id).update({
      firstName: editModalForm.firstName.value,
      lastName: editModalForm.lastName.value,
-     phone: editModalForm.phone.value,
      email: editModalForm.email.value,
+     category: editModalForm.category.value,
+     curricular: editModalForm.curricular.value,
  });
  editModal.classList.remove('modal-show');
 

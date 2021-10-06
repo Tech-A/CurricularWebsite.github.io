@@ -22,7 +22,8 @@
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
-                        <th>Extracurricular</th>
+                        <th>Category</th>
+                        <th>Curricular</th>
                         <th>Action</th>
                     </tr>
 
@@ -39,31 +40,32 @@
                             <form class="form" autocomplete="off">
                                 <input type="text" name="firstName" placeholder = "First Name">
                                 <input type="text" name="lastName" placeholder="Last Name">
-                                <input type="text" name="phone" placeholder="Phone">
                                 <input type="text" name="email" placeholder="Email">
+                                <input type="text" name="category" placeholder="Category">
+                                <input type="text" name="curricular" placeholder="Curricular">
                                 <button class="btn btn-modal">Submit</button>
                             </form>
                         </div> 
                 </div>
             </div>
 
+<!--Edit Modal -->
+<div class="edit-modal modal-wrapper">
+    <div class="modal">
+        <div class="modal-header"><h3 style="color:white;">Edit User</h3></div>
+            <div class="modal-body">
+                <form class="form" autocomplete="off">
+                    <input type="text" name="firstName" placeholder = "First Name">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="category" placeholder="Category">
+                    <input type="text" name="curricular" placeholder="Curricular">
+                    <button class="btn btn-modal">Submit</button>
+                </form>
+            </div> 
+    </div>
+</div>
 
-            <!--Edit Modal -->
-            <div class="edit-modal modal-wrapper">
-                <div class="modal">
-                    <div class="modal-header"><h3>Edit User</h3></div>
-                        <div class="modal-body">
-                            <form class="form" autocomplete="off">
-                                <input type="text" name="firstName" placeholder = "First Name">
-                                <input type="text" name="lastName" placeholder="Last Name">
-                                <input type="text" name="phone" placeholder="Phone">
-                                <input type="text" name="email" placeholder="Email">
-                                <button class="btn btn-modal">Submit</button>
-                            </form>
-                        </div> 
-                </div>
-            </div>
-        </div>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
@@ -74,14 +76,14 @@
 
 <script>
    // Your web app's Firebase configuration
-   var firebaseConfig = {
-              apiKey: "AIzaSyB1Aq8OA9hpSiWLSIEz_I2R_b9OyeeAALo",
-              authDomain: "crudwithcand-fb739.firebaseapp.com",
-              projectId: "crudwithcand-fb739",
-              storageBucket: "crudwithcand-fb739.appspot.com",
-              messagingSenderId: "958699947303",
-              appId: "1:958699947303:web:9e006e7a2fbdc292731502"
-            };
+   const firebaseConfig = {
+    apiKey: "AIzaSyA6aVunKkJ3_a_AN0ejsGJC26vrT5clzuc",
+    authDomain: "extracurricular-f86c3.firebaseapp.com",
+    projectId: "extracurricular-f86c3",
+    storageBucket: "extracurricular-f86c3.appspot.com",
+    messagingSenderId: "610497386266",
+    appId: "1:610497386266:web:f1655c1ce05e775d41fea3"
+  };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
