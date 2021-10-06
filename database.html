@@ -9,7 +9,85 @@
     </head>
     <body>
      <h1>Favourites</h1>
+
+     
+        <div class="container">
+            <header>
+                <h3 style="letter-spacing: 2px;">Favourite an extracurricular</h3>
+            </header>
+
+            <div class="table-wrapper">
+                <table class="table-users">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Extracurricular</th>
+                        <th>Action</th>
+                    </tr>
+
+                </table>
+
+                <button class="btn btn-add">Add</button>
+            </div>
+
+<!--Add Modal -->
+            <div class="add-modal modal-wrapper">
+                <div class="modal">
+                    <div class="modal-header"><h3 style="color:white;">Add New User</h3></div>
+                        <div class="modal-body">
+                            <form class="form" autocomplete="off">
+                                <input type="text" name="firstName" placeholder = "First Name">
+                                <input type="text" name="lastName" placeholder="Last Name">
+                                <input type="text" name="phone" placeholder="Phone">
+                                <input type="text" name="email" placeholder="Email">
+                                <button class="btn btn-modal">Submit</button>
+                            </form>
+                        </div> 
+                </div>
+            </div>
+
+
+            <!--Edit Modal -->
+            <div class="edit-modal modal-wrapper">
+                <div class="modal">
+                    <div class="modal-header"><h3>Edit User</h3></div>
+                        <div class="modal-body">
+                            <form class="form" autocomplete="off">
+                                <input type="text" name="firstName" placeholder = "First Name">
+                                <input type="text" name="lastName" placeholder="Last Name">
+                                <input type="text" name="phone" placeholder="Phone">
+                                <input type="text" name="email" placeholder="Email">
+                                <button class="btn btn-modal">Submit</button>
+                            </form>
+                        </div> 
+                </div>
+            </div>
+        </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
+<script>
+   // Your web app's Firebase configuration
+   var firebaseConfig = {
+              apiKey: "AIzaSyB1Aq8OA9hpSiWLSIEz_I2R_b9OyeeAALo",
+              authDomain: "crudwithcand-fb739.firebaseapp.com",
+              projectId: "crudwithcand-fb739",
+              storageBucket: "crudwithcand-fb739.appspot.com",
+              messagingSenderId: "958699947303",
+              appId: "1:958699947303:web:9e006e7a2fbdc292731502"
+            };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
         
-        <script src="" async defer></script>
+        <script src="database.js" async defer></script>
+        
     </body>
 </html>
