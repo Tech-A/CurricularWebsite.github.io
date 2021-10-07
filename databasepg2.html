@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Favourites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="database.css">
+    </head>
+    <body>
+     <h1>Sort by</h1>
+
+     
+        <div class="container">
+            <header>
+                <h3 style="letter-spacing: 2px;">First name and curricular</h3>
+            </header>
+
+            <div class="table-wrapper">
+                <table class="table-users">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Curricular</th>
+                    </tr>
+
+                </table>
+
+              
+            </div>
+
+     
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
+<script>
+   // Your web app's Firebase configuration
+   const firebaseConfig = {
+    apiKey: "AIzaSyA6aVunKkJ3_a_AN0ejsGJC26vrT5clzuc",
+    authDomain: "extracurricular-f86c3.firebaseapp.com",
+    projectId: "extracurricular-f86c3",
+    storageBucket: "extracurricular-f86c3.appspot.com",
+    messagingSenderId: "610497386266",
+    appId: "1:610497386266:web:f1655c1ce05e775d41fea3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+        
+        <script src="page2.js" async defer></script>
+        
+    </body>
+</html>
