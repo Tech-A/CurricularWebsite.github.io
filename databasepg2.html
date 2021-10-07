@@ -8,6 +8,35 @@
         <link rel="stylesheet" href="database.css">
     </head>
     <body>
+
+        <div class= "navbar">
+
+            <span onclick="openNav()"> &#9776; Menu </span>
+            
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="Explorepage.html">Explore</a>
+            <a href="Artspage.html">Arts</a>
+            <a href="Sportspage.html">Sports</a>
+            <a href="Musicpage.html">Music</a>
+            <a href="Service.html">Service</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="database.html">Favourites</a>
+            </div>
+         <script>
+           function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+         </script>
+         </div>
+   </div>
+   <br>
+   <hr>
      <h1>Sort by</h1>
 
      
