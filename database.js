@@ -21,7 +21,7 @@ const tr = `
          <tr data-id='${doc.id}'>
             <td>${doc.data().firstName}</td>
             <td>${doc.data().lastName}</td>
-            <td>${doc.data().email}</td>
+            <td>${doc.data().yearLevel}</td>
             <td>${doc.data().category}</td>
             <td>${doc.data().curricular}</td>
             <td>
@@ -41,7 +41,7 @@ const tr = `
     id = doc.id;
     editModalForm.firstName.value = doc.data().firstName;
     editModalForm.lastName.value = doc.data().lastName;
-    editModalForm.email.value = doc.data().email;
+    editModalForm.yearLevel.value = doc.data().yearLevel;
     editModalForm.category.value = doc.data().category;
     editModalForm.curricular.value = doc.data().curricular;
     });
@@ -65,7 +65,7 @@ btnAdd.addEventListener('click', () => {
 
     addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
-    addModalForm.email.value = '';
+    addModalForm.yearLevel.value = '';
     addModalForm.category.value = '';
     addModalForm.curricular.value = '';
 });
@@ -114,7 +114,7 @@ addModalForm.addEventListener('submit', e => {
     db.collection('users').add({
         firstName: addModalForm.firstName.value,
         lastName: addModalForm.lastName.value,
-        email: addModalForm.email.value,
+        yearLevel: addModalForm.yearLevel.value,
         category: addModalForm.category.value,
         curricular: addModalForm.curricular.value,
     });
@@ -127,7 +127,7 @@ editModalForm.addEventListener('submit', e => {
  db.collection('users').doc(id).update({
      firstName: editModalForm.firstName.value,
      lastName: editModalForm.lastName.value,
-     email: editModalForm.email.value,
+     yearLevel: editModalForm.yearLevel.value,
      category: editModalForm.category.value,
      curricular: editModalForm.curricular.value,
  });

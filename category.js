@@ -9,8 +9,7 @@ let id;
 const renderUser = doc => {
 const tr = `
          <tr data-id='${doc.id}'>
-            <td>${doc.data().firstName}</td>
-            <td>${doc.data().lastName}</td>
+            <td>${doc.data().category}</td>
             <td>${doc.data().curricular}</td>
         </tr>
         `;

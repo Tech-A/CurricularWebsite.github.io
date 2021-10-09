@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="database.css">
     </head>
     <body>
-
+        <script src="https://kit.fontawesome.com/c164c7c888.js" crossorigin="anonymous"></script>
         <div class= "navbar">
 
             <span onclick="openNav()"> &#9776; Menu </span>
@@ -37,27 +37,26 @@
    </div>
    <br>
    <hr>
-     <h1>Sort by</h1>
+
+
+        <h1>Favourites</h1>
 
      
         <div class="container">
             <header>
-                <h3 style="letter-spacing: 2px;">First name and curricular</h3>
+                <h3 style="letter-spacing: 2px;">Sorted by year level</h3>
             </header>
+
 
             <div class="table-wrapper">
                 <table class="table-users">
                     <tr>
-                        <th>First Name</th>
+                        <th>Year Level</th>
                         <th>Curricular</th>
                     </tr>
 
                 </table>
 
-              
-            </div>
-
-     
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -82,7 +81,7 @@
   const db = firebase.firestore();
 </script>
         
-        <script src="page2.js" async defer></script>
+        <script src="yearLevel.js" async defer></script>
         
     </body>
 </html>

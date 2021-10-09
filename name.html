@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="database.css">
     </head>
     <body>
-        <script src="https://kit.fontawesome.com/c164c7c888.js" crossorigin="anonymous"></script>
+
         <div class= "navbar">
 
             <span onclick="openNav()"> &#9776; Menu </span>
@@ -37,79 +37,28 @@
    </div>
    <br>
    <hr>
-
-
-        <h1>Favourites</h1>
+     <h1>Favourites</h1>
 
      
         <div class="container">
             <header>
-                <h3 style="letter-spacing: 2px;">Favourite an extracurricular</h3>
+                <h3 style="letter-spacing: 2px;">Sorted by name</h3>
             </header>
-
-
-<div class="dropdown">
-    
-    <button class="dropbtn"><i class="fas fa-filter"></i>   Sort curriculars by</button>
-    <div class="dropdown-content">
-      <a href="name.html">Name</a>
-      <a href="yearlevel.html">Year level</a>
-      <a href="category.html">Category</a>
-    </div>
-  </div>
 
             <div class="table-wrapper">
                 <table class="table-users">
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
-                        <th>Year Level</th>
-                        <th>Category</th>
                         <th>Curricular</th>
-                        <th>Action</th>
                     </tr>
 
                 </table>
 
-                <button class="btn btn-add">Add</button>
+              
             </div>
 
-<!--Add Modal -->
-            <div class="add-modal modal-wrapper">
-                <div class="modal">
-                    <div class="modal-header"><h3 style="color:white;">Add New User</h3></div>
-                        <div class="modal-body">
-                            <form class="form" autocomplete="off">
-                                <input type="text" name="firstName" placeholder = "First Name">
-                                <input type="text" name="lastName" placeholder="Last Name">
-                                <input type="text" name="yearLevel" placeholder="Year Level">
-                                <input type="text" name="category" placeholder="Category">
-                                <input type="text" name="curricular" placeholder="Curricular">
-                                <button class="btn btn-modal">Submit</button>
-                            </form>
-                        </div> 
-                </div>
-            </div>
-
-<!--Edit Modal -->
-<div class="edit-modal modal-wrapper">
-    <div class="modal">
-        <div class="modal-header"><h3 style="color:white;">Edit User</h3></div>
-            <div class="modal-body">
-                <form class="form" autocomplete="off">
-                    <input type="text" name="firstName" placeholder = "First Name">
-                    <input type="text" name="lastName" placeholder="Last Name">
-                    <input type="text" name="yearLevel" placeholder="Year Level">
-                    <input type="text" name="category" placeholder="Category">
-                    <input type="text" name="curricular" placeholder="Curricular">
-                    <button class="btn btn-modal">Submit</button>
-                </form>
-            </div> 
-    </div>
-</div>
-
-
-
+     
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -134,7 +83,7 @@
   const db = firebase.firestore();
 </script>
         
-        <script src="database.js" async defer></script>
+        <script src="page2.js" async defer></script>
         
     </body>
 </html>
