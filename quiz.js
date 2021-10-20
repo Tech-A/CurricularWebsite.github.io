@@ -21,7 +21,13 @@ let arts = document.querySelector("#Artsinfo");
 let sports = document.querySelector("#Sportsinfo");
 let music = document.querySelector("#Musicinfo");
 let service = document.querySelector("#Serviceinfo");
+let quote = document.querySelector("#quote");
 
+
+const sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
+const musicMessageList = ["music quote 1", "music quote 2", "music quote 3"];
+const artsMessageList = ["arts quote 1", "arts quote 2", "arts quote 3"];
+const serviceMessageList = ["service quote 1", "service quote 2", "service quote 3"];
 
 
 //what will be displayed on the initial page (on first click)
@@ -462,18 +468,38 @@ sports.style.display = "none";
 
 
 
+//array + loop bit
+var sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
+let number = 0;
+
+for (let i=0; i<sportMessageList.length; i++) {
+   task(i);
+}
+
+function task(i) {
+    setTimeout(function() {
+        quote.innerHTML = (sportMessageList[number]);
+        number += 1;
+    });
+}
 
 //array + loop bit
+//var sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
+//let number = 0;
+
+//for (let i=0; i<sportMessageList.length; i++) {
+   // task(i);
+//}
+
+//function task(i) {
+  //  setTimeout(function() {
+    //    console.log(sportMessageList[number]);
+      //  number += 1;
+  //  });
+//}
 
 
 
-
-const sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
-
-sportMessageList[0];
-const musicMessageList = ["music quote 1", "music quote 2", "music quote 3"];
-const artsMessageList = ["arts quote 1", "arts quote 2", "arts quote 3"];
-const serviceMessageList = ["service quote 1", "service quote 2", "service quote 3"];
 
 
 
@@ -499,27 +525,39 @@ q5.style.display = "none";
 fini.style.display ="none";
 
 
+
+
+
 if (message === 'Sports'){
 arts.style.display = "none";
 sports.style.display = "block";
     music.style.display = "none";
     service.style.display = "none";
+
 } else if (message === 'Music'){
     arts.style.display = "none";
     sports.style.display = "none";
     music.style.display = "block";
     service.style.display = "none";
+    quote.style.display= "block"; 
 } else if (message === 'Arts') {
     arts.style.display = "block";
     sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    quote.style.display= "block"; 
 } else {
     service.style.display = "block";
     arts.style.display = "none";
     sports.style.display = "none";
     music.style.display = "none";
-} };
+    quote.style.display= "block"; 
+} ;
+
+
+
+
+};
 
 
 
