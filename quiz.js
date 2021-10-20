@@ -21,13 +21,24 @@ let arts = document.querySelector("#Artsinfo");
 let sports = document.querySelector("#Sportsinfo");
 let music = document.querySelector("#Musicinfo");
 let service = document.querySelector("#Serviceinfo");
-let quote = document.querySelector("#quote");
+
+//image list array
+const image = document.querySelector("#images");
+var imageList = ["https://images.unsplash.com/photo-1538117546660-8eee17c37064?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80", "https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80", "https://media.istockphoto.com/photos/craft-box-stands-on-a-white-table-picture-id1263861939?b=1&k=20&m=1263861939&s=170667a&w=0&h=aQgTg7mOZ666K8716szk8zBjeGbOCpF6jTop-pOVOb8=", "https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"];
+let number = 0;
 
 
-const sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
-const musicMessageList = ["music quote 1", "music quote 2", "music quote 3"];
-const artsMessageList = ["arts quote 1", "arts quote 2", "arts quote 3"];
-const serviceMessageList = ["service quote 1", "service quote 2", "service quote 3"];
+
+for (let i=0; i<imageList.length; i++) {
+ task(i); 
+ }
+ function task(i) {
+   setTimeout(function() {
+     image.src = (imageList[number]);
+     number += 1; 
+   }, 2000 * i);
+   }
+ 
 
 
 //what will be displayed on the initial page (on first click)
@@ -43,6 +54,7 @@ arts.style.display = "none";
 sports.style.display = "none";
 music.style.display = "none";
 service.style.display = "none";
+image.style.display = "block";
 
 //when the start button is clicked, page should hide start button and display question 1
 function start() {
@@ -58,6 +70,7 @@ function start() {
     sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 
 
@@ -122,6 +135,7 @@ arts.style.display = "none";
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 
 
@@ -177,6 +191,7 @@ function submitq2(){
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 //previous button of question 2 returns to question 1
 function returnq2(){
@@ -192,6 +207,7 @@ arts.style.display = "none";
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 
 
@@ -248,6 +264,7 @@ function submitq3(){
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 //previous button of question 3 returns to question 2
 function returnq3(){
@@ -263,6 +280,7 @@ arts.style.display = "none";
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 
 
@@ -320,6 +338,7 @@ function submitq4(){
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 //previous button of question 4 returns to question 3
 function returnq4(){
@@ -335,6 +354,7 @@ arts.style.display = "none";
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 
 
@@ -413,6 +433,7 @@ function submitq5(){
     music.style.display = "none";
     service.style.display = "none";
     greetingInput.style.display = "block";
+    image.style.display = "none";
 
 
 //All scores are totaled to get total score (stored in total score variable)
@@ -445,6 +466,7 @@ arts.style.display = "none";
 sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
+    image.style.display = "none";
 }
 
 
@@ -464,24 +486,11 @@ sports.style.display = "none";
     music.style.display = "none";
     service.style.display = "none";
     startbt.style.display = "none"
+    image.style.display = "none";
 }
 
 
 
-//array + loop bit
-var sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
-let number = 0;
-
-for (let i=0; i<sportMessageList.length; i++) {
-   task(i);
-}
-
-function task(i) {
-    setTimeout(function() {
-        quote.innerHTML = (sportMessageList[number]);
-        number += 1;
-    });
-}
 
 //array + loop bit
 //var sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
@@ -523,6 +532,7 @@ q3.style.display = "none";
 q4.style.display = "none";
 q5.style.display = "none";
 fini.style.display ="none";
+image.style.display = "none";
 
 
 
