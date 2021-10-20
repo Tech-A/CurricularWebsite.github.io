@@ -22,13 +22,17 @@ let sports = document.querySelector("#Sportsinfo");
 let music = document.querySelector("#Musicinfo");
 let service = document.querySelector("#Serviceinfo");
 
+
+//IMAGE
+
 //image list array
 const image = document.querySelector("#images");
 var imageList = ["https://images.unsplash.com/photo-1538117546660-8eee17c37064?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80", "https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80", "https://media.istockphoto.com/photos/craft-box-stands-on-a-white-table-picture-id1263861939?b=1&k=20&m=1263861939&s=170667a&w=0&h=aQgTg7mOZ666K8716szk8zBjeGbOCpF6jTop-pOVOb8=", "https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"];
+
 let number = 0;
 
 
-
+//looping through image array
 for (let i=0; i<imageList.length; i++) {
  task(i); 
  }
@@ -36,7 +40,7 @@ for (let i=0; i<imageList.length; i++) {
    setTimeout(function() {
      image.src = (imageList[number]);
      number += 1; 
-   }, 2000 * i);
+   }, 2000 * i); //added delay of 2 seconds
    }
  
 
@@ -490,37 +494,6 @@ sports.style.display = "none";
 }
 
 
-
-
-//array + loop bit
-//var sportMessageList = ["sport quote 1", "sport quote 2", "sport quote 3"];
-//let number = 0;
-
-//for (let i=0; i<sportMessageList.length; i++) {
-   // task(i);
-//}
-
-//function task(i) {
-  //  setTimeout(function() {
-    //    console.log(sportMessageList[number]);
-      //  number += 1;
-  //  });
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //INFORMATION page
 //more info button should show certain info corresponding to the user's message result
 function info() {
@@ -533,9 +506,6 @@ q4.style.display = "none";
 q5.style.display = "none";
 fini.style.display ="none";
 image.style.display = "none";
-
-
-
 
 
 if (message === 'Sports'){
