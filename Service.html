@@ -39,9 +39,111 @@
   <img src="https://wallpaper.dog/large/10724012.jpg" alt="service" style="width:1425px; height:500px;">
   <div class="content">
     <h1>Service</h1>
-    <p>At Marist College, there are numerous opportunities for students to give back to their own community and help those in need.</p>
   </div>
 </div>
+<hr>
+<br>
+<br>
+<div class="text">
+<h2>What is it?</h2>
+<p>At Marist College, there are numerous opportunities for students to give back to their own community and help those in need.</p>
+<br><br>
+<hr>
+<br>
+<h2>Benefits</h2>
+<p>Students will learn the importance of service and selflessness.</p>
+</div>  
+
+
+<br>
+<br>
+<hr>
+<br>
+<h2>Extracurriculars under service</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Craft')" id="defaultOpen">Craft group</button>
+  <button class="tablinks" onclick="openCity(event, 'Maybelles')">Maybelles</button>
+  <button class="tablinks" onclick="openCity(event, 'Vinnies')">Vinnies</button>
+  <button class="tablinks" onclick="openCity(event, 'Environmental group')">Environmental group</button>
+</div>
+
+<div id="Craft" class="tabcontent">
+  <h2>Craft group</h2>
+  <p>Students can explore arts and crafts, and be involved in projects. Meetings usually in breaks and/or after school in the fabric room.</p>
+  <h3>Things that would be helpful:</h3>
+  <ul>
+    <li>Basic knowledge of sewing, using needles etc. </li>
+    <li>Creativity</li>
+  </ul>
+  <br>
+  <br>
+</div>
+
+<div id="Maybelles" class="tabcontent">
+  <h2>Maybelles</h2>
+  <p>Maybelles is a student service choir at Marist college. Students visit a resthome and perform for the elderly.</p>
+  <li>No talents or skills required. Just come with a willing, enthusiastic mindset.</li>
+  <br>
+  <br>
+</div>
+
+<div id="Vinnies" class="tabcontent">
+  <h2>Vinnies</h2>
+<p>A brief description of the curricular here</p>
+  <h3>Requirements</h3>
+  <ul>
+    <li>An orchestral instrument</li>
+    <li>Prior knowledge of how to play that instrument</li>
+  </ul>
+  <br>
+</div>
+
+<div id="MJB" class="tabcontent">
+  <h2>Marist Jazz band</h2></a>
+  <p>A brief description of the curricular here</p>
+  <ul>
+    <li>Junior Vinnies</li>
+    <li>Senior Vinnies</li>
+    <li>Resthome club</li>
+    <li>Relay for life</li>
+    <li>Environmental club</li>
+  </ul>
+  <br>
+</div>  
+<br>
+<br>
+<br>
+<hr>
+<h2>For more information</h2>
+<p>Contact the music teachers</p>
+<br>
+<ul style="text-align: center;">Charlotte Nicklin - C.Nicklin@maristcollege.school.nz</ul>
+<ul style="text-align: center;">Charlotte Nicklin - C.Nicklin@maristcollege.school.nz</ul>
+<ul style="text-align: center;">Charlotte Nicklin - C.Nicklin@maristcollege.school.nz</ul>
+<br>
+<br>
+
+<hr>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+  </script>
+     
+
+</body>
           </body>
 
           <style>
@@ -135,11 +237,11 @@ top: 15px;
 right: 35px;
 }
 
-/* container */
+/* Header */
 .container {
   position: relative;
-  max-width: 2000px;
-  margin: 0 auto;
+  width: 1700px;
+  margin: auto;
 }
 
 .container img {vertical-align: middle;
@@ -148,12 +250,68 @@ margin:auto;}
 .container .content {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
   width: 1385px;
   padding: 20px;
 }
+/* tabs */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgb(155, 127, 127);
+  width: 90%;
+  margin: auto;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width:88%;
+  background-color: rgb(73, 51, 51);
+  margin:auto;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color:rgb(85, 81, 81);
+  color:white;
+  transition-duration: 0.4s;
+}
+
           </style>
 
 
