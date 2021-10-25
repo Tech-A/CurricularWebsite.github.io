@@ -36,18 +36,128 @@
           </div>
 <hr>
 <div class="container">
-  <img src="https://images.unsplash.com/photo-1499892477393-f675706cbe6e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="arts" style="width:1425px; height:500px;">
+  <img src="https://media.istockphoto.com/photos/fine-art-abstract-floral-painting-background-picture-id1258336471?k=20&m=1258336471&s=612x612&w=0&h=1uH4ReDjt_obTD1Ux6pz6AQ2LNHFFExEhKVUKqlvQZE=" alt="arts" style="width:1425px; height:500px;">
   <div class="content">
     <h1>The Arts</h1>
-    <p>Students have opportunities to grow their confidence and skills through the arts. Marist College offers a range of performing arts and art opportunities to help nurture creativity.</p>
   </div>
 </div>
+<hr>
+
+<br>
+<br>
+<div class="text">
+<h2>What is it?</h2>
+<p>At Marist College, students have opportunities to grow their confidence and skills through the arts. Marist College offers a range of performing arts and art opportunities to help nurture creativity.</p>
+<br><br>
+<hr>
+<br>
+<h2>Benefits</h2>
+<p>Students will learn to express their creativity and be able to explore their skills and abilities.</p>
+</div>  
+
+
+<br>
+<br>
+<hr>
+<br>
+<h2>Extracurriculars under the arts</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Drawing')" id="defaultOpen">Drawing club</button>
+  <button class="tablinks" onclick="openCity(event, 'Improv')">Improv group</button>
+  <button class="tablinks" onclick="openCity(event, 'Musical')">Musical production</button>
+  <button class="tablinks" onclick="openCity(event, 'Cultural')">Cultural groups</button>
+</div>
+
+<div id="Drawing" class="tabcontent">
+  <h2>Drawing club</h2>
+  <p>Students can draw, paint or express their creativity on a range of mediums (eg. paper), individually or with the guidance of an art teacher. Takes place in breaks in the art room (V208).</p>
+  <br>
+  <h3>Suggestions:</h3>
+  <ul>
+    <li>Paints, paintbrushes etc (though these can be borrowed from the art department)</li>
+    <li>Paper/visual diary</li>
+  </ul>
+  <br>
+  <img src = "https://s31531.pcdn.co/wp-content/uploads/2018/04/GettyImages-172711535_graphite-pencil-drawing.jpg.optimal.jpg" style="margin-left:450px;width:400px; height:250px;">
+  <br>
+  <br>
+  <br>
+</div>
+
+<div id="Improv" class="tabcontent">
+  <h2>Improv group</h2>
+  <p>A group where students can learn the basics of improvisation and try it out.</p>
+  <br><p>No talents or skills required. Just come with a willing, enthusiastic mindset.</p>
+  <br>
+  <img src = "http://neologisms.blogs.wm.edu/files/2016/03/improv.jpg" style="margin-left:450px;width:400px; height:250px;">
+  <br>
+  <br>
+  <br>
+</div>
+
+<div id="Musical" class="tabcontent">
+  <h2>Musical production</h2>
+<p>Every year, Marist College, usually with a brothering school (St Peters) presents a musical production for students with musical talent and interest to take part in. In 2021, Marist College and St Peters presented the Sound of Music. Next year, in 2022, Marist College and St Peters will hold Grease the musical. Auditions for this take place in term 4. Email details at the bottom of the page. </p>
+<br>  
+<img src="https://www.ssmtva.org/wp-content/uploads/2021/03/Grease_logo_REDCAR.png" style="margin-left:500px;width:250px; height:250px;">
+  <br>
+  <br>
+</div>
+
+<div id="Cultural" class="tabcontent">
+  <h2>Cultural group</h2></a>
+  <p>Every year, Marist College holds a family festival, showcasing different cultures. Students can join cultural groups and perform cultural dances at the festival. Some groups are even taken to Polyfest. Sign up sheets are available at the start of next year, a few weeks before the festival.</p>
+  <br>  
+  <img src="https://www.kindpng.com/picc/m/208-2083634_cultural-clipart-folk-dance-clipart-greek-dancers-hd.png" style="margin-left:450px;width:350px; height:250px;">
+    <br>
+    <br>
+  <br>
+</div>  
+<br>
+<br>
+<br>
+<hr>
+<h2>For more information</h2>
+<p>Contacts</p>
+<br>
+<p>Drawing club</p>
+<ul style="text-align: center;">Jessica Jacobsen - J.Jacobsen@maristcollege.school.nz</ul>
+<ul style="text-align: center;">Sophia Schon - S.Schon@maristcollege.school.nz</ul>
+<br>
+<p>Improv</p>
+<ul style="text-align: center;">Keith Paterson - K.Paterson@maristcollege.school.nz</ul>
+<br>
+<p>Musical production</p>
+<ul style="text-align: center;">schoolproductionteam@gmail.com</ul>
+<br>
+<br>
+<br>
+
+<hr>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+  </script>
+     
 
           </body>
 
           <style>
 body {
-  background-image: #ddd;
+  background-color: rgb(180, 144, 144);
 }
 
 body, html {
@@ -63,11 +173,24 @@ body, html {
 h2 {
   color:white;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
 p {
   text-align: center;
   letter-spacing: 2px;
+  color: white;
+}
+h3 {
+  color: white;
+  letter-spacing: 2px;
+
+}
+li {
+  color: white;
+  letter-spacing: 2px;
+}
+ul {
   color: white;
 }
    /* navbar */
@@ -81,7 +204,7 @@ font-size:30px;
 padding-right: 10px;
 padding-bottom: 15px;
 cursor:pointer;
-color:rgb(51, 48, 48);
+color:white;
 }
 
 .overlay {
@@ -135,7 +258,7 @@ top: 15px;
 right: 35px;
 }
 
-/* container */
+/* Header */
 .container {
   position: relative;
   width: 1700px;
@@ -148,11 +271,66 @@ margin:auto;}
 .container .content {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
   width: 1385px;
   padding: 20px;
+}
+/* tabs */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgb(168, 163, 121);
+  width: 90%;
+  margin: auto;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width:88%;
+  background-color: rgb(187, 165, 69);
+  margin:auto;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color:rgb(85, 81, 81);
+  color:white;
+  transition-duration: 0.4s;
 }
           </style>
 
